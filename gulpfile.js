@@ -28,6 +28,10 @@ gulp.task('sass', function() {
 		.pipe(plumber())
 		.pipe(sass())
 		.pipe(sass({outputStyle: 'expanded'}))
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
+		}))
 		.pipe(gulp.dest('./app/public/css'))
 		.pipe(browser.reload({stream:true}))
 });
