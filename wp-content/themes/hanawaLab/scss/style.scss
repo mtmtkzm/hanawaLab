@@ -1,0 +1,12 @@
+@import 'setting';
+@import 'reset';
+@import 'mixin';
+@import 'base';
+@import 'clearfix';
+
+body {
+	background-color: blue;
+}
+p {
+	color: red
+}
