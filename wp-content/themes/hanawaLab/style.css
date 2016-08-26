@@ -80,10 +80,8 @@ body {
 }
 
 /* End hide from IE-mac */
-body {
-  background-color: blue;
-}
-
-p {
-  color: red;
+.logo-path {
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }

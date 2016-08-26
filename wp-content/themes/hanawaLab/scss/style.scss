@@ -4,9 +4,5 @@
 @import 'base';
 @import 'clearfix';
 
-body {
-	background-color: blue;
-}
-p {
-	color: red
-}
+// Modules
+@import 'module/logoPath';
