@@ -18,7 +18,7 @@ gulp.task('server', function() {
 ****************************** */
 var del = require('del');
 gulp.task('clean', function() {
-	del(['./css/']);
+	del(['./style.css']);
 });
 
 /* Sass
@@ -33,7 +33,7 @@ gulp.task('sass', function() {
 			browsers: ['last 2 versions'],
 			cascade: false
 		}))
-		.pipe(gulp.dest('./css'))
+		.pipe(gulp.dest('./'))
 		.pipe(browser.reload({stream:true}))
 });
 
@@ -42,12 +42,12 @@ gulp.task('sass', function() {
 ****************************** */
 var cmq = require('gulp-combine-media-queries');
 gulp.task('cmq', function() {
-	gulp.src('./css/*.css')
+	gulp.src('./*.css')
 		.pipe(plumber())
 		.pipe(cmq({
 			log: true
 		}))
-		.pipe(gulp.dest('./css'));
+		.pipe(gulp.dest('./'));
 });
 
 
