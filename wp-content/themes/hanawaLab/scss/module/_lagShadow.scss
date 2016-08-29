@@ -1,0 +1,10 @@
+// lag-shadow
+.lag-shadow {
+	position: relative;
+	.shadow {
+		position: absolute;
+		top: 6%;
+		left: 1%;
+		z-index: -1;
+	}
+}
