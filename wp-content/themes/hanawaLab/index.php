@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>HanawaLab.</title>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
 </head>
 <body <?php body_class(); ?> >
 
@@ -18,14 +19,16 @@
 			<img src="<?php bloginfo('template_directory'); ?>/images/top/title.png">
 			<img class="shadow" src="<?php bloginfo('template_directory'); ?>/images/top/title-shadow.png">
 		</div>
+		<p class="sharetech">Nagoya City University − School of Design & Architecture</p>
+
+		<?php if(have_posts()): while(have_posts()): the_post(); ?>
+		<article <?php post_class(); ?>>
+			<h1><?php the_title(); ?></h1>
+		</article>
+		<?php endwhile; endif; ?>
 	</main>
 	<footer class="footer"></footer>
 
-	<?php if(have_posts()): while(have_posts()): the_post(); ?>
-	<article <?php post_class(); ?>>
-		<h3><?php the_title(); ?></h3>
-	</article>
 
-	<?php endwhile; endif; ?>
 </body>
 </html>
