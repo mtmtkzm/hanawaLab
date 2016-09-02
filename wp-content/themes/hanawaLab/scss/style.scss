@@ -5,6 +5,45 @@
 @import 'clearfix';
 
 // Modules
+@import 'module/sharetech';
 @import 'module/logoPath';
 @import 'module/lagShadow';
+@import 'module/background';
+@import 'module/site-title';
+@import 'module/h2';
 
+
+body {
+	width: 100vw;
+	color: $black;
+	border: 15px solid $white;
+	box-sizing: border-box;
+}
+
+main,
+header,
+footer {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+
+.about {
+	width: 100%;
+	background-color: $white;
+	padding: 80px 0;
+	.about-description {
+		width: 800px;
+		margin: 0 auto;
+		line-height: 2em;
+	}
+}
+
+
+.whats {
+	width: 100%;
+	background-color: gray;
+	.post {
+		width: 33%;
+	}
+}

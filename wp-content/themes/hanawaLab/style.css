@@ -51,7 +51,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: auto;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   color: #333;
   background-color: #fff;
@@ -80,19 +80,127 @@ body {
 }
 
 /* End hide from IE-mac */
+.sharetech {
+  font-family: 'Share Tech', sans-serif;
+}
+
 .logo-path {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 55px;
+  left: 70px;
+  font-size: 32px;
+  z-index: 10;
+}
+
+.logo-path a {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #222;
+}
+
+.logo-path a:hover {
+  text-decoration: underline;
+}
+
+.logo-path a.directory {
+  padding-bottom: 5px;
+}
+
+.logo-path a.directory:before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 32px;
+  border-radius: 3px;
+  margin: 0 22px -5px 14px;
+  background-color: #222;
+  transform: rotate(18deg);
 }
 
 .lag-shadow {
   position: relative;
 }
 
-.lag-shadow .shadow {
+.lag-shadow img:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.lag-shadow img:nth-child(2) {
   position: absolute;
-  top: 6%;
-  left: 1%;
-  z-index: -1;
+  top: 6px;
+  left: 9px;
+  z-index: 0;
+}
+
+body {
+  background-color: #B6F4C6;
+}
+
+.site-title .site-title-main {
+  margin-top: 30vh;
+}
+
+.site-title .site-title-sub {
+  font-size: 23px;
+  margin-top: 2vh;
+  margin-bottom: 30vh;
+}
+
+.h2 h2 {
+  font-size: 36px;
+  font-family: 'Share Tech', sans-serif;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.h2 .icon {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.h2:after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: orange;
+  margin: 0 auto 80px;
+}
+
+body {
+  width: 100vw;
+  color: #222;
+  border: 15px solid #fff;
+  box-sizing: border-box;
+}
+
+main,
+header,
+footer {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.about {
+  width: 100%;
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.about .about-description {
+  width: 800px;
+  margin: 0 auto;
+  line-height: 2em;
+}
+
+.whats {
+  width: 100%;
+  background-color: gray;
+}
+
+.whats .post {
+  width: 33%;
 }
