@@ -1,5 +1,29 @@
 .logo-path {
 	position: fixed;
-	top: 20px;
-	left: 20px;
+	top: 55px;
+	left: 70px;
+	font-size: 32px;
+	z-index: 10;
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		color: $black;
+		&:hover {
+			text-decoration: underline;
+		}
+		&.directory {
+			padding-bottom: 5px;
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 3px;
+				height: 32px;
+				border-radius: 3px;
+				margin: 0 22px -5px 14px;
+				background-color: $black;
+				transform: rotate(18deg);
+			}
+		}
+	}
 }
