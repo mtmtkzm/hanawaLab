@@ -22,7 +22,7 @@
 			</div>
 			<p class="site-title-sub sharetech">Nagoya City University − School of Design & Architecture</p>
 		</div>
-		<section class="about">
+		<section class="about dropshadow">
 			<div class="h2">
 				<div class="lag-shadow icon">
 					<img src="<?php bloginfo('template_directory'); ?>/images/top/i-about.png">
