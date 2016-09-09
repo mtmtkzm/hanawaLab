@@ -9,19 +9,21 @@
 <body <?php body_class(); ?> >
 
 	<header class="header">
-		<div class="logo-path sharetech">
-			<a href="/"><h2><img src="<?php bloginfo('template_directory'); ?>/images/common/logo.png" alt=""></h2></a>
-			<a class="directory" href="/">Home</a>
-		</div>
+		<section>
+			<div class="logo-path sharetech">
+				<a href="/"><h2><img src="<?php bloginfo('template_directory'); ?>/images/common/logo.png" alt=""></h2></a>
+				<a class="directory" href="/">Home</a>
+			</div>
+		</section>
 	</header>
 	<main class="main index">
-		<div class="site-title">
+		<section class="site-title">
 			<div class="site-title-main lag-shadow">
 				<img src="<?php bloginfo('template_directory'); ?>/images/top/title.png">
 				<img src="<?php bloginfo('template_directory'); ?>/images/top/title-shadow.png">
 			</div>
 			<p class="site-title-sub sharetech">Nagoya City University − School of Design & Architecture</p>
-		</div>
+		</section>
 		<section class="about dropshadow">
 			<div class="h2">
 				<div class="lag-shadow icon">
