@@ -44,6 +44,8 @@
 			<?php endwhile; endif; ?>
 		</section>
 	</main>
-	<footer class="footer">&copy; 2016 HanawaLab.</footer>
+	<footer class="footer">
+		<small class="copyright">&copy; 2016 HanawaLab.</small>
+	</footer>
 </body>
 </html>
