@@ -181,15 +181,20 @@ body {
   box-sizing: border-box;
 }
 
-main,
-header,
-footer {
+main section,
+header section,
+footer section {
   width: 1100px;
   margin: 0 auto;
 }
 
+main section.full,
+header section.full,
+footer section.full {
+  width: 100vw;
+}
+
 .about {
-  width: 100%;
   background-color: #fff;
   padding: 80px 0;
 }
@@ -203,8 +208,12 @@ footer {
 .whats {
   width: 100%;
   background-color: gray;
+  font-size: 0;
 }
 
 .whats .post {
   width: 33%;
+  height: 315px;
+  font-size: 1rem;
+  display: inline-block;
 }

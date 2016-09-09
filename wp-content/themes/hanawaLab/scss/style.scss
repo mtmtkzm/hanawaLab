@@ -24,12 +24,16 @@ body {
 main,
 header,
 footer {
-	width: 1100px;
-	margin: 0 auto;
+	section {
+		width: 1100px;
+		margin: 0 auto;
+		&.full {
+			width: 100vw;
+		}
+	}
 }
 
 .about {
-	width: 100%;
 	background-color: $white;
 	padding: 80px 0;
 	.about-description {
@@ -43,7 +47,11 @@ footer {
 .whats {
 	width: 100%;
 	background-color: gray;
+	font-size: 0;
 	.post {
 		width: 33%;
+		height: 315px;
+		font-size: 1rem;
+		display: inline-block;
 	}
 }
