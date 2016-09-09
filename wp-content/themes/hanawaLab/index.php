@@ -39,7 +39,10 @@
 		<section class="whats">
 			<?php if(have_posts()): while(have_posts()): the_post(); ?>
 			<article <?php post_class(); ?>>
-				<h1><?php the_title(); ?></h1>
+				<img class="thumb" src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png" alt="">
+				<div class="content">
+					<h1><?php the_title(); ?></h1>
+				</div>
 			</article>
 			<?php endwhile; endif; ?>
 		</section>

@@ -207,8 +207,8 @@ footer section.full {
 
 .whats {
   width: 100%;
-  background-color: gray;
   font-size: 0;
+  padding-bottom: 300px;
 }
 
 .whats .post {
@@ -216,6 +216,19 @@ footer section.full {
   height: 315px;
   font-size: 1rem;
   display: inline-block;
+}
+
+.whats .post .thumb {
+  width: 100%;
+}
+
+.whats .post .content {
+  width: 90%;
+  height: 100px;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+  top: -50px;
 }
 
 .footer {

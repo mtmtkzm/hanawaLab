@@ -46,13 +46,24 @@ footer {
 
 .whats {
 	width: 100%;
-	background-color: gray;
 	font-size: 0;
+	padding-bottom: 300px;
 	.post {
 		width: 33%;
 		height: 315px;
 		font-size: 1rem;
 		display: inline-block;
+		.thumb {
+			width: 100%;
+		}
+		.content {
+			width: 90%;
+			height: 100px;
+			background-color: $white;
+			margin: 0 auto;
+			position: relative;
+			top: -50px;
+		}
 	}
 }
 
