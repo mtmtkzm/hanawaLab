@@ -37,10 +37,17 @@
 			</p>
 		</section>
 		<section class="whats">
+			<div class="h2">
+				<div class="lag-shadow icon">
+					<img src="<?php bloginfo('template_directory'); ?>/images/top/i-about.png">
+					<img src="<?php bloginfo('template_directory'); ?>/images/top/i-about-shadow.png">
+				</div>
+				<h2>What's New</h2>
+			</div>
 			<?php if(have_posts()): while(have_posts()): the_post(); ?>
 			<article <?php post_class(); ?>>
 				<img class="thumb" src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png" alt="">
-				<div class="content">
+				<div class="content dropshadow">
 					<h1><?php the_title(); ?></h1>
 				</div>
 			</article>
