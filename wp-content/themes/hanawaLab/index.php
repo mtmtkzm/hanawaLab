@@ -11,7 +11,7 @@
 	<header class="header">
 		<section>
 			<div class="logo-path sharetech">
-				<a href="/"><h2><img src="<?php bloginfo('template_directory'); ?>/images/common/logo.png" alt=""></h2></a>
+				<a href="/"><h2><img src="<?php bloginfo('template_directory'); ?>/images/common/logo.png"></h2></a>
 				<a class="directory" href="/">Home</a>
 			</div>
 		</section>
@@ -43,10 +43,14 @@
 			</div>
 			<?php if(have_posts()): while(have_posts()): the_post(); ?>
 			<article <?php post_class(); ?>>
-				<img class="thumb" src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png" alt="">
-				<div class="content dropshadow">
-					<h1><?php the_title(); ?></h1>
-				</div>
+				<a href="<?php the_permalink(); ?>">
+					<div>
+						<img class="thumb" src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png">
+						<div class="content dropshadow">
+							<h1><?php the_title(); ?></h1>
+						</div>
+					</div>
+				</a>
 			</article>
 			<?php endwhile; endif; ?>
 		</section>
