@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-  <meta charset="UTF-8">
-
-  <?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?> >
+<?php get_header(); ?>
 
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
@@ -15,6 +8,4 @@
     </article>
 
   <?php endwhile; endif; ?>
-
-</body>
-</html>
+  <?php get_footer(); ?>
