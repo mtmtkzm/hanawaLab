@@ -38,5 +38,4 @@
       <?php endwhile; endif; ?>
     </section>
   </main>
-
   <?php get_footer(); ?>
