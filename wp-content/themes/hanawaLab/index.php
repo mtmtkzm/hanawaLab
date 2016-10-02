@@ -30,7 +30,9 @@
           <div>
             <img class="thumb" src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png">
             <div class="content dropshadow">
-              <h1><?php the_title(); ?></h1>
+              <span><?php echo get_the_date('Y.m.d'); ?></span>
+              <span><?php the_category(' '); ?></span>
+              <h1 class="post-title"><?php the_title(); ?></h1>
             </div>
           </div>
         </a>
