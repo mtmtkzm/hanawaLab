@@ -26,6 +26,7 @@ footer {
   section {
     width: 1100px;
     margin: 0 auto;
+    padding-top: 50px;
     &.full {
       width: 100vw;
     }
@@ -113,11 +114,20 @@ footer {
   }
 }
 
+.mail {
+  text-align: center;
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 28px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
 
 .access {
-  .mail {
-
-  }
   .access-univ {
     font-size: 0;
     width: 100%;
