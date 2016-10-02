@@ -94,7 +94,7 @@ footer {
     text-align: right;
     a {
       font-size: 16px;
-      margin-top: 1em;
+      margin-top: .5em;
       text-decoration: none;
       display: inline-block;
       padding: .2em 20px;
@@ -108,5 +108,29 @@ footer {
 .mv {
   img {
     width: 100%;
+  }
+}
+
+
+.access {
+  .mail {
+
+  }
+  .access-univ {
+    font-size: 0;
+    // width: 100%;
+    & > div {
+      width: 50%;
+      height: 40vw;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    .univ-map {
+
+    }
+    .univ-address {
+      font-size: 1rem;
+      background-color: $white;
+    }
   }
 }

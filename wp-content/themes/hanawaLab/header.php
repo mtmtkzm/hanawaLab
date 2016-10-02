@@ -5,7 +5,7 @@
   <title><?php wp_title(); ?>名古屋市立大学 芸術工学研究科 塙研究室</title>
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
-
+  <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
   <?php wp_head(); ?>
   <style type="text/css">
     /* wpのtopbarを削除・最後に戻す */
@@ -30,8 +30,8 @@
         <li><a href="/">トップページ</a></li>
         <li><a href="/about">塙研究室について</a></li>
         <li><a href="/achieve">研究紹介・業績</a></li>
+        <li><a href="/contact">お問い合わせ</a></li>
         <li><a href="/lecture">講義</a></li>
       </ul>
     </nav>
   </header>
-  <div class="mv"></div>
