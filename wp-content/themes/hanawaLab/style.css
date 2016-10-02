@@ -259,13 +259,19 @@ footer section.full {
 
 .access .access-univ {
   font-size: 0;
+  width: 100%;
 }
 
 .access .access-univ > div {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
   width: 50%;
   height: 40vw;
-  display: inline-block;
-  box-sizing: border-box;
+}
+
+.access .access-univ .univ-map {
+  background-color: lightgray;
 }
 
 .access .access-univ .univ-address {

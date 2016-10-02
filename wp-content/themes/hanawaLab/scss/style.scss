@@ -118,15 +118,16 @@ footer {
   }
   .access-univ {
     font-size: 0;
-    // width: 100%;
+    width: 100%;
     & > div {
+      display: inline-block;
+      vertical-align: top;
+      box-sizing: border-box;
       width: 50%;
       height: 40vw;
-      display: inline-block;
-      box-sizing: border-box;
     }
     .univ-map {
-
+      background-color: lightgray;
     }
     .univ-address {
       font-size: 1rem;
