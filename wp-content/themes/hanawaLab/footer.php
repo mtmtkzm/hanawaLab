@@ -1,3 +1,4 @@
+  </main>
   <footer class="footer">
     <small class="copyright">&copy; 2016 HanawaLab.</small>
   </footer>
