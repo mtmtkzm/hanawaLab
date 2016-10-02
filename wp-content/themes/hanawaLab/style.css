@@ -116,7 +116,8 @@ body {
   transform: rotate(18deg);
 }
 
-body {
+body,
+main {
   background-color: #B6F4C6;
 }
 
@@ -175,6 +176,22 @@ header section.full,
 main section.full,
 footer section.full {
   width: 100vw;
+}
+
+header,
+main {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  margin-bottom: 185px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
 }
 
 .about {

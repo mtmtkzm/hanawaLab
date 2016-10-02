@@ -33,6 +33,22 @@ footer {
   }
 }
 
+header,
+main {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  margin-bottom: 200px - 15px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
 .about {
   background-color: $white;
   padding: 80px 0;
