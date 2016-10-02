@@ -14,67 +14,99 @@
 
 
 body {
-	width: 100vw;
-	color: $black;
-	border: 15px solid $white;
-	box-sizing: border-box;
+  width: 100vw;
+  color: $black;
+  border: 15px solid $white;
+  box-sizing: border-box;
 }
 
-main,
 header,
+main,
 footer {
-	section {
-		width: 1100px;
-		margin: 0 auto;
-		&.full {
-			width: 100vw;
-		}
-	}
+  section {
+    width: 1100px;
+    margin: 0 auto;
+    &.full {
+      width: 100vw;
+    }
+  }
 }
 
 .about {
-	background-color: $white;
-	padding: 80px 0;
-	.about-description {
-		width: 800px;
-		margin: 0 auto;
-		line-height: 2em;
-	}
+  background-color: $white;
+  padding: 80px 0;
+  .about-description {
+    width: 800px;
+    margin: 0 auto;
+    line-height: 2em;
+  }
 }
 
 
 .whats {
-	width: 100%;
-	font-size: 0;
-	margin-top: 50px;
-	padding-bottom: 300px;
-	.post {
-		width: 33.333%;
-		height: 315px;
-		font-size: 1rem;
-		display: inline-block;
-		vertical-align: top;
-		.thumb {
-			width: 100%;
-		}
-		.content {
-			width: 90%;
-			height: 100px;
-			background-color: $white;
-			margin: 0 auto;
-			position: relative;
-			top: -50px;
-		}
-	}
+  width: 100%;
+  font-size: 0;
+  margin-top: 50px;
+  padding-bottom: 300px;
+  .post {
+    width: 33.333%;
+    height: 315px;
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    .thumb {
+      width: 100%;
+    }
+    .content {
+      width: 90%;
+      height: 100px;
+      background-color: $white;
+      margin: 0 auto;
+      position: relative;
+      top: -50px;
+    }
+  }
 }
 
 
 .footer {
-	background-color: $white;
-	width: 100%;
-	height: 300px;
-	text-align: center;
-	.copyright {
-		line-height: 300px;
-	}
+  background-color: $white;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  .copyright {
+    line-height: 200px;
+  }
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.gnav {
+  float: right;
+  font-size: 0;
+  li {
+    text-align: right;
+    a {
+      font-size: 16px;
+      margin-top: 1em;
+      text-decoration: none;
+      display: inline-block;
+      padding: .2em 20px;
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
+
+
+.mv {
+  img {
+    width: 100%;
+  }
 }

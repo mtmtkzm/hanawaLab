@@ -1,9 +1,7 @@
 .logo-path {
-	position: fixed;
-	top: 55px;
-	left: 70px;
 	font-size: 32px;
-	z-index: 10;
+	position: relative;
+	margin: 30px 0 0 30px;
 	a {
 		display: inline-block;
 		vertical-align: middle;
