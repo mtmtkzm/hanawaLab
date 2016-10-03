@@ -29,7 +29,7 @@
     <ul id="gnav">
       <li><a href="/">トップページ</a></li>
       <li><a href="/about">塙研究室について</a></li>
-      <li><a href="/achieve">研究紹介・業績</a></li>
+      <li><a href="/research">研究紹介・業績</a></li>
       <li><a href="/contact">お問い合わせ</a></li>
       <li><a href="/lecture">講義</a></li>
     </ul>
