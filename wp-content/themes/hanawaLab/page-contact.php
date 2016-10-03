@@ -17,6 +17,26 @@
     <div class="access-univ">
       <div class="univ-map">
         <div id="map-canvas">ここに地図が表示されます</div>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+          var googlemap;
+          function initMap() {
+            googlemap = new google.maps.Map(document.getElementById('map-canvas'), {
+              center: {lat: 35.181691, lng: 136.947799},
+              zoom: 16,
+              styles: [{
+                stylers:
+                [
+                  { hue: '#22ff00' },
+                  { gamma: 0 },
+                  { saturation: -80 },
+                  { lightness: 0 }
+                ]
+              }]
+            });
+          }
+          initMap();
+        </script>
         <div class="univ-address">
           名古屋市立大学芸術工学部 大学院芸術工学研究科<br>
           〒464-0083 <br>
