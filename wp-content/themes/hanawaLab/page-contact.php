@@ -24,6 +24,7 @@
             googlemap = new google.maps.Map(document.getElementById('map-canvas'), {
               center: {lat: 35.181691, lng: 136.947799},
               zoom: 16,
+              scrollwheel: false,
               styles: [{
                 stylers:
                 [
