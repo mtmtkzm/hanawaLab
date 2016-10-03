@@ -6,7 +6,7 @@
       </div>
       <p class="site-title-sub sharetech">Nagoya City University − School of Design & Architecture</p>
     </section>
-    <section class="about dropshadow">
+    <section id="about" class="dropshadow">
       <div class="h2">
         <div class="lag-shadow icon">
           <img src="<?php bloginfo('template_directory'); ?>/images/top/i-about.png">
@@ -17,7 +17,7 @@
         とうてい単に矛盾をしますばみませものにしただ。そうしてまたご支を愛するのはたった新たと作っまして、その人格がしか利くでしからといった他人にありから切らますたら。その時自分のためその他は何中をもたですかと大森さんが思いたた、道の今うというおお話ましですたと、今に遂げよてそのためをまあするましまいとしでしょ事ですが、なしませたばもう少しご専門聞いだ方たいないた。または新か窮屈か謝罪に買うでしょから、場合中支を喜ぶてくれな以上に大学習の場合を降るなけれです。
       </p>
     </section>
-    <section class="whats">
+    <section id="whats">
       <div class="h2">
         <div class="lag-shadow icon">
           <img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png">

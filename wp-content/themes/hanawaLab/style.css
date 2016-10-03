@@ -158,61 +158,68 @@ main {
 }
 
 body {
-  width: 100vw;
-  color: #222;
   border: 15px solid #fff;
   box-sizing: border-box;
 }
 
-header section,
-main section,
-footer section {
+section {
   width: 1100px;
   margin: 0 auto;
   padding-top: 50px;
 }
 
-header section.full,
-main section.full,
-footer section.full {
-  width: 100vw;
+section.full {
+  width: 100%;
 }
 
-header,
-main {
+#header {
+  position: fixed;
+  z-index: 2;
+}
+
+#main {
   position: relative;
   z-index: 1;
 }
 
-main {
+#main {
   margin-bottom: 185px;
+  padding-bottom: 30px;
+  min-height: 100vh;
 }
 
-footer {
+#footer {
   position: fixed;
   bottom: 0;
   z-index: -1;
 }
 
-.about {
+#gnav {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 2;
+}
+
+#about {
   background-color: #fff;
   padding: 80px 0;
 }
 
-.about .about-description {
+#about .about-description {
   width: 800px;
   margin: 0 auto;
   line-height: 2em;
 }
 
-.whats {
+#whats {
   width: 100%;
   font-size: 0;
   margin-top: 50px;
   padding-bottom: 300px;
 }
 
-.whats .post {
+#whats .post {
   width: 33.333%;
   height: 315px;
   font-size: 1rem;
@@ -220,11 +227,11 @@ footer {
   vertical-align: top;
 }
 
-.whats .post .thumb {
+#whats .post .thumb {
   width: 100%;
 }
 
-.whats .post .content {
+#whats .post .content {
   position: relative;
   top: -50px;
   box-sizing: border-box;
@@ -235,35 +242,27 @@ footer {
   background-color: #fff;
 }
 
-.footer {
+#footer {
   background-color: #fff;
   width: 100%;
   height: 200px;
   text-align: center;
 }
 
-.footer .copyright {
+#footer .copyright {
   line-height: 200px;
 }
 
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
-.gnav {
+#gnav {
   float: right;
   font-size: 0;
 }
 
-.gnav li {
+#gnav li {
   text-align: right;
 }
 
-.gnav li a {
+#gnav li a {
   font-size: 16px;
   margin-top: .5em;
   text-decoration: none;
@@ -277,38 +276,45 @@ footer {
   width: 100%;
 }
 
-.mail {
+#mail {
   text-align: center;
 }
 
-.mail a {
+#mail a {
   color: #fff;
   text-decoration: none;
   font-size: 28px;
 }
 
-.mail a:hover {
+#mail a:hover {
   text-decoration: underline;
 }
 
-.access .access-univ {
-  font-size: 0;
+#access .access-univ {
   width: 100%;
+  height: 30vw;
+  font-size: 0;
 }
 
-.access .access-univ > div {
+#access .access-univ .univ-map {
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  box-sizing: border-box;
-  width: 50%;
-  height: 40vw;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
 }
 
-.access .access-univ .univ-map {
+#access .access-univ .univ-map #map-canvas {
+  width: 100%;
+  height: 100%;
   background-color: lightgray;
 }
 
-.access .access-univ .univ-address {
-  font-size: 1rem;
+#access .access-univ .univ-map .univ-address {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 30px;
   background-color: #fff;
 }

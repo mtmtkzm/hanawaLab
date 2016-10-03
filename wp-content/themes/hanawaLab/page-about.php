@@ -4,9 +4,7 @@
   </div>
   <section class="schedule">
     <div class="h2">
-      <div class="lag-shadow icon">
-        <img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png">
-      </div>
+      <div class="lag-shadow icon"><img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png"></div>
       <h2>A yearly schedule</h2>
     </div>
     <?php if(have_posts()): the_post(); ?>
@@ -17,9 +15,7 @@
   </section>
   <section>
     <div class="h2">
-      <div class="lag-shadow icon">
-        <img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png">
-      </div>
+      <div class="lag-shadow icon"><img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png"></div>
       <h2>Member of Lab.</h2>
     </div>
     <ul class="professor">
