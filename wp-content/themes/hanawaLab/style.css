@@ -237,10 +237,6 @@ section.full {
   vertical-align: top;
 }
 
-#whats .post .post-thumb {
-  width: 100%;
-}
-
 #whats .post .post-content {
   position: absolute;
   bottom: -50px;

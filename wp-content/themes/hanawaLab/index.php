@@ -28,7 +28,7 @@
       <article <?php post_class(); ?>>
         <a href="<?php the_permalink(); ?>">
           <div>
-            <img class="post-thumb" src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png">
+            <div class="post-thumb"><img src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png"></div>
             <div class="post-content dropshadow">
               <span class="post-content-date"><?php echo get_the_date('Y.m.d'); ?></span>
               <h1 class="post-content-title"><?php the_title(); ?></h1>
