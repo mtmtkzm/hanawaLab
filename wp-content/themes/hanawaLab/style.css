@@ -135,7 +135,7 @@ body {
 
 body,
 main {
-  background-color: #B6F4C6;
+  background: url("./images/common/index-bg.png") #B6F4C6 repeat center center;
 }
 
 .site-title .site-title-main {
