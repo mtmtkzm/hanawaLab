@@ -28,11 +28,10 @@
       <article <?php post_class(); ?>>
         <a href="<?php the_permalink(); ?>">
           <div>
-            <img class="thumb" src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png">
-            <div class="content dropshadow">
-              <span><?php echo get_the_date('Y.m.d'); ?></span>
-              <span><?php the_category(' '); ?></span>
-              <h1 class="post-title"><?php the_title(); ?></h1>
+            <img class="post-thumb" src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png">
+            <div class="post-content dropshadow">
+              <span class="post-content-date"><?php echo get_the_date('Y.m.d'); ?></span>
+              <h1 class="post-content-title"><?php the_title(); ?></h1>
             </div>
           </div>
         </a>
