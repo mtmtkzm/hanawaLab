@@ -90,17 +90,21 @@ section {
   top: 100px;
   right: 0;
   z-index: 2;
-  float: right;
   font-size: 0;
+  font-weight: 700;
   li {
     text-align: right;
     a {
-      font-size: 16px;
+      font-size: 15px;
       margin-top: .5em;
       display: inline-block;
-      padding: .2em 20px;
+      padding: .3em 30px .4em 20px;
       background-color: $white;
       color: $black;
+      letter-spacing: .1em;
+    }
+    &.lecture {
+      margin-top: 35px;
     }
   }
 }

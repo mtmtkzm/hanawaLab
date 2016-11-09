@@ -257,8 +257,8 @@ section.full {
   top: 100px;
   right: 0;
   z-index: 2;
-  float: right;
   font-size: 0;
+  font-weight: 700;
 }
 
 #gnav li {
@@ -266,12 +266,17 @@ section.full {
 }
 
 #gnav li a {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: .5em;
   display: inline-block;
-  padding: .2em 20px;
+  padding: .3em 30px .4em 20px;
   background-color: #ffffff;
   color: #252525;
+  letter-spacing: .1em;
+}
+
+#gnav li.lecture {
+  margin-top: 35px;
 }
 
 .mv img {
