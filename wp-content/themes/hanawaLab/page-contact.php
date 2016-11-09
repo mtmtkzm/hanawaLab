@@ -7,10 +7,7 @@
       <div class="lag-shadow icon"><img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png"></div>
       <h2>Get in touch</h2>
     </div>
-    <div>
-      <p>ご用のある方は、こちらまでメールをおねがいしますー</p>
-      <a href="mailto:hanawa@sda.nagoya-cu.ac.jp">hanawa@sda.nagoya-cu.ac.jp</a>
-    </div>
+    <a href="mailto:hanawa@sda.nagoya-cu.ac.jp">hanawa@sda.nagoya-cu.ac.jp</a>
   </section>
   <section id="access">
     <div class="h2">

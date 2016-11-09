@@ -52,8 +52,9 @@ body {
   font-smoothing: antialiased;
   text-rendering: auto;
   font-size: 16px;
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
-  color: #222;
+  font-family: "NotoSansCJKjp", sans-serif;
+  font-weight: 400;
+  color: #252525;
   background-color: #fff;
 }
 
@@ -80,6 +81,22 @@ body {
 }
 
 /* End hide from IE-mac */
+@font-face {
+  font-family: "NotoSansCJKjp";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/notosans-regular.eot");
+  src: local("Noto Sans CJK JP Regular"), url("./fonts/notosans-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/notosans-regular.woff") format("woff"), l url("./fonts/notosans-regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSansCJKjp";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/notosans-bold.eot");
+  src: local("Noto Sans CJK JP Bold"), url("./fonts/notosans-bold.eot?#iefix") format("embedded-opentype"), url("./fonts/notosans-bold.woff") format("woff"), url("./fonts/notosans-bold.otf") format("opentype");
+}
+
 .sharetech {
   font-family: 'Share Tech', sans-serif;
 }
@@ -94,7 +111,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
-  color: #222;
+  color: #252525;
 }
 
 .logo-path a:hover {
@@ -112,7 +129,7 @@ body {
   height: 32px;
   border-radius: 3px;
   margin: 0 22px -5px 14px;
-  background-color: #222;
+  background-color: #252525;
   transform: rotate(18deg);
 }
 
@@ -158,8 +175,18 @@ main {
 }
 
 body {
-  border: 15px solid #fff;
+  border: 15px solid #ffffff;
   box-sizing: border-box;
+}
+
+a {
+  color: #252525;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 section {
@@ -180,37 +207,13 @@ section.full {
 #main {
   position: relative;
   z-index: 1;
-}
-
-#main {
-  margin-bottom: 185px;
-  padding-bottom: 30px;
+  margin-bottom: 345px;
+  padding-bottom: 100px;
   min-height: 100vh;
 }
 
-#footer {
-  position: fixed;
-  bottom: 0;
-  z-index: -1;
-  background-color: #fff;
-  width: 100%;
-  height: 200px;
-  text-align: center;
-}
-
-#footer .copyright {
-  line-height: 200px;
-}
-
-#gnav {
-  position: fixed;
-  top: 100px;
-  right: 0;
-  z-index: 2;
-}
-
 #about {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 80px 0;
 }
 
@@ -224,7 +227,6 @@ section.full {
   width: 100%;
   font-size: 0;
   margin-top: 50px;
-  padding-bottom: 300px;
 }
 
 #whats .post {
@@ -247,10 +249,14 @@ section.full {
   height: 100px;
   padding: 25px 15px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 #gnav {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 2;
   float: right;
   font-size: 0;
 }
@@ -262,11 +268,10 @@ section.full {
 #gnav li a {
   font-size: 16px;
   margin-top: .5em;
-  text-decoration: none;
   display: inline-block;
   padding: .2em 20px;
-  background-color: #fff;
-  color: #222;
+  background-color: #ffffff;
+  color: #252525;
 }
 
 .mv img {
@@ -278,13 +283,13 @@ section.full {
 }
 
 #mail a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 28px;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
 }
 
-#mail a:hover {
-  text-decoration: underline;
+#access {
+  margin-top: 50px;
 }
 
 #access .access-univ {
@@ -331,53 +336,107 @@ section.full {
   box-sizing: border-box;
 }
 
-#article h1 {
+#article .article-post-title {
   display: block;
   font-size: 34px;
-  border-bottom: 2px solid #333;
-}
-
-#article p {
-  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 70px;
+  padding-bottom: 35px;
   line-height: 1.4em;
-  margin-top: 1em;
+  letter-spacing: .05em;
 }
 
-#article ul {
+#article .article-post-content h1 {
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  line-height: 1.4em;
+  letter-spacing: .08em;
+}
+
+#article .article-post-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  border-left: 8px solid #ddd;
+  padding: 15px 0 15px 1em;
+  margin-top: 30px;
+  line-height: 1.4em;
+  letter-spacing: .05em;
+}
+
+#article .article-post-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+#article .article-post-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#article .article-post-content h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#article .article-post-content h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#article .article-post-content p {
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: 0.08em;
+  margin-top: 30px;
+}
+
+#article .article-post-content ul {
   margin-left: 2em;
   margin-top: 20px;
   list-style: square inside;
 }
 
-#article ol {
+#article .article-post-content ol {
   margin-top: 20px;
   margin-left: 2em;
   list-style: decimal inside;
 }
 
-#article li {
+#article .article-post-content li {
   margin-top: 5px;
   line-height: 1.4em;
   padding-left: 1em;
   text-indent: -2em;
 }
 
-#article strong {
+#article .article-post-content strong {
   font-weight: bold;
 }
 
-#article em {
+#article .article-post-content em {
   font-style: italic;
 }
 
-#article blockquote {
+#article .article-post-content blockquote {
   padding: 20px 50px 30px 80px;
+  margin-top: 30px;
   text-align: justify;
   background-color: #eee;
   position: relative;
 }
 
-#article blockquote:before {
+#article .article-post-content blockquote:before {
   content: "”";
   position: absolute;
   font-size: 10em;
@@ -385,4 +444,52 @@ section.full {
   top: 5px;
   left: 10px;
   z-index: 0;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  background-color: #ffffff;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  padding: 50px 0 20px;
+  font-family: 'Share Tech';
+}
+
+#footer section {
+  padding: 0;
+}
+
+#footer section h3 {
+  color: #B6F4C6;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#footer .footer-address {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+#footer .footer-link {
+  margin-top: 60px;
+}
+
+#footer .footer-link .social-link li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 50px;
+}
+
+#footer .footer-link .social-link li img {
+  height: 40px;
+  width: auto;
+}
+
+#footer .copyright {
+  display: inline-block;
+  margin-top: 40px;
 }

@@ -3,6 +3,7 @@
 @import 'mixin';
 @import 'base';
 @import 'clearfix';
+@import 'font-notosans';
 
 // Modules
 @import 'module/sharetech';
@@ -17,7 +18,14 @@ body {
   border: 15px solid $white;
   box-sizing: border-box;
 }
-
+a {
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
 section {
   width: 1100px;
   margin: 0 auto;
@@ -27,6 +35,7 @@ section {
   }
 }
 
+
 #header {
   position: fixed;
   z-index: 2;
@@ -35,33 +44,9 @@ section {
 #main {
   position: relative;
   z-index: 1;
-}
-
-#main {
-  margin-bottom: 200px - 15px;
-  padding-bottom: 30px;
+  margin-bottom: 360px - 15px;
+  padding-bottom: 100px;
   min-height: 100vh;
-}
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  z-index: -1;
-  background-color: $white;
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  .copyright {
-    line-height: 200px;
-  }
-}
-
-
-#gnav {
-  position: fixed;
-  top: 100px;
-  right: 0;
-  z-index: 2;
 }
 
 #about {
@@ -78,7 +63,6 @@ section {
   width: 100%;
   font-size: 0;
   margin-top: 50px;
-  padding-bottom: 300px;
   .post {
     width: 33.333%;
     height: 315px;
@@ -102,6 +86,10 @@ section {
 }
 
 #gnav {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 2;
   float: right;
   font-size: 0;
   li {
@@ -109,7 +97,6 @@ section {
     a {
       font-size: 16px;
       margin-top: .5em;
-      text-decoration: none;
       display: inline-block;
       padding: .2em 20px;
       background-color: $white;
@@ -127,16 +114,14 @@ section {
 #mail {
   text-align: center;
   a {
-    color: $white;
-    text-decoration: none;
-    font-size: 28px;
-    &:hover {
-      text-decoration: underline;
-    }
+    font-family: 'Share Tech', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
   }
 }
 
 #access {
+  margin-top: 50px;
   .access-univ {
     width: 100%;
     height: 30vw;
@@ -175,54 +160,145 @@ section {
   background-color: #fff;
   padding: 80px 150px;
   box-sizing: border-box;
-  h1 {
+  .article-post-title {
     display: block;
     font-size: 34px;
-    border-bottom: 2px solid #333;
-  }
-  p {
-    font-size: 16px;
-    line-height: 1.4em;
-    margin-top: 1em;
-  }
-  ul {
-    margin-left: 2em;
-    margin-top: 20px;
-    list-style: square inside;
-  }
-  ol {
-    margin-top: 20px;
-    margin-left: 2em;
-    list-style: decimal inside;
-  }
-  li {
-    margin-top: 5px;
-    line-height: 1.4em;
-    padding-left: 1em;
-    text-indent: -2em;
-  }
-  strong {
     font-weight: bold;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 70px;
+    padding-bottom: 35px;
+    line-height: 1.4em;
+    letter-spacing: .05em;
   }
-
-  em {
-    font-style: italic;
-  }
-
-  blockquote {
-    padding: 20px 50px 30px 80px;
-    text-align: justify;
-    background-color: #eee;
-    position: relative;
-    &:before {
-      content: "”";
-      position: absolute;
-      font-size: 10em;
-      color: #ccc;
-      top: 5px;
-      left: 10px;
-
-      z-index: 0;
+  .article-post-content {
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      background-color: #eee;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 30px;
+      line-height: 1.4em;
+      letter-spacing: .08em;
     }
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      border-left: 8px solid #ddd;
+      padding: 15px 0 15px 1em;
+      margin-top: 30px;
+      line-height: 1.4em;
+      letter-spacing: .05em;
+    }
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 30px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    h5 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    h6 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6em;
+      letter-spacing: 0.08em;
+      margin-top: 30px;
+    }
+    ul {
+      margin-left: 2em;
+      margin-top: 20px;
+      list-style: square inside;
+    }
+    ol {
+      margin-top: 20px;
+      margin-left: 2em;
+      list-style: decimal inside;
+    }
+    li {
+      margin-top: 5px;
+      line-height: 1.4em;
+      padding-left: 1em;
+      text-indent: -2em;
+    }
+    strong {
+      font-weight: bold;
+    }
+    em {
+      font-style: italic;
+    }
+    blockquote {
+      padding: 20px 50px 30px 80px;
+      margin-top: 30px;
+      text-align: justify;
+      background-color: #eee;
+      position: relative;
+      &:before {
+        content: "”";
+        position: absolute;
+        font-size: 10em;
+        color: #ccc;
+        top: 5px;
+        left: 10px;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  background-color: $white;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  padding: 50px 0 20px;
+  font-family: 'Share Tech';
+  section {
+    padding: 0;
+    h3 {
+      color: $green;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+  .footer-address {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  .footer-link {
+    margin-top: 60px;
+    .social-link {
+      li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 50px;
+        img {
+          height: 40px;
+          width: auto;
+        }
+      }
+    }
+  }
+  .copyright {
+    display: inline-block;
+    margin-top: 40px;
   }
 }
