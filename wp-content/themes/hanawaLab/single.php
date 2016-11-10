@@ -6,6 +6,7 @@
   <section id="article" class="dropshadow">
     <article <?php post_class(); ?> >
       <h1 class="article-post-title"><?php the_title(); ?></h1>
+      <p class="article-post-date"><?php echo get_the_date('Y.m.d'); ?></p>
       <div class="article-post-content">
         <?php the_content(); ?>
       </div>

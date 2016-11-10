@@ -179,10 +179,17 @@ section {
     font-size: 34px;
     font-weight: bold;
     border-bottom: 2px solid #eee;
-    margin-bottom: 70px;
     padding-bottom: 35px;
+    margin-bottom: 20px;
     line-height: 1.4em;
     letter-spacing: .05em;
+  }
+  .article-post-date {
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 80px;
   }
   .article-post-content {
     h1 {
@@ -244,7 +251,7 @@ section {
     }
     li {
       margin-top: 5px;
-      line-height: 1.4em;
+      line-height: 1.6em;
       padding-left: 1em;
       text-indent: -2em;
     }
