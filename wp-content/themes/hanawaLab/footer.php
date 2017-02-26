@@ -5,10 +5,10 @@
       <address>hanawa@sda.nagoya-cu.ac.jp</address>
     </section>
     <section class="footer-link">
-      <h3 class="footer-title">Link</h3>
+      <h3 class="footer-title">Links</h3>
       <ul class="social-link">
-        <li><img src="<?php bloginfo('template_directory'); ?>/images/common/footer/banner/ncu.jpg"></li>
-        <li><img src="<?php bloginfo('template_directory'); ?>/images/common/footer/banner/sda.jpg"></li>
+        <li><a href=""><img src="<?php bloginfo('template_directory'); ?>/images/common/footer/banner/ncu.jpg"></a></li>
+        <li><a href=""><img src="<?php bloginfo('template_directory'); ?>/images/common/footer/banner/sda.jpg"></a></li>
       </ul>
     </section>
     <small class="copyright">&copy; 2016 HanawaLab.</small>

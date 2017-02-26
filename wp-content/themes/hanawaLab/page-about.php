@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <div class="mv">
-    <img src="<?php bloginfo('template_directory'); ?>/images/<?php the_title(); ?>/mv.png">
+    <img src="<?php bloginfo('template_directory'); ?>/images/about/mv.png">
   </div>
   <section class="schedule">
     <div class="h2">
