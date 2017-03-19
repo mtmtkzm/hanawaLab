@@ -493,6 +493,14 @@ section.full {
   z-index: 0;
 }
 
+#member {
+  display: none;
+}
+
+#member .members h2 {
+  border-left: 10px solid #B6F4C6;
+}
+
 #footer {
   background-color: #ffffff;
   width: 100%;

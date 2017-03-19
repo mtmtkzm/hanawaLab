@@ -296,6 +296,17 @@ section {
   }
 }
 
+#member {
+  display: none;
+  .members {
+    h2 {
+      border-left: 10px solid $green;
+    }
+    p {
+      
+    }
+  }
+}
 
 #footer {
   background-color: $white;
