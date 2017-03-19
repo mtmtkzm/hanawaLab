@@ -30,7 +30,6 @@ a {
 }
 
 section {
-  width: 1100px;
   margin: 0 auto;
   padding-top: 50px;
   &.full {
@@ -44,13 +43,9 @@ section {
 }
 
 #main {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 360px - 15px;
   padding-bottom: 100px;
   min-height: 100vh;
 }
-
 #about {
   background-color: $white;
   padding: 65px 0;
@@ -66,7 +61,7 @@ section {
 #whats {
   width: 100%;
   font-size: 0;
-  margin-top: 50px;
+  margin: 50px 0;
   .post {
     width: 33.333%;
     position: relative;
@@ -76,7 +71,7 @@ section {
     .post-thumb {
       position: relative;
       width: 100%;
-      height: 20vw;
+      height: 18vw;
       overflow: hidden;
       img {
         position: absolute;
@@ -303,9 +298,6 @@ section {
 
 
 #footer {
-  position: fixed;
-  bottom: 0;
-  z-index: -1;
   background-color: $white;
   width: 100%;
   height: 300px;
