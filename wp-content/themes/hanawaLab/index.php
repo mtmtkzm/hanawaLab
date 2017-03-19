@@ -27,12 +27,12 @@
       <?php query_posts('showposts=3'); if(have_posts()): while(have_posts()): the_post(); ?>
       <article <?php post_class(); ?>>
         <a href="<?php the_permalink(); ?>">
-          <div>
-            <div class="post-thumb"><img src="http://news-kuwashiku.blog.so-net.ne.jp/_images/blog/_867/news-kuwashiku/ousakajun.png"></div>
-            <div class="post-content dropshadow">
-              <span class="post-content-date"><?php echo get_the_date('Y.m.d'); ?></span>
-              <h1 class="post-content-title"><?php the_title(); ?></h1>
-            </div>
+          <div class="post-thumb">
+            <img src="<?php bloginfo('template_directory'); ?>/images/top/thumbs.png">
+          </div>
+          <div class="post-content dropshadow">
+            <span class="post-content-date"><?php echo get_the_date('Y.m.d'); ?></span>
+            <h1 class="post-content-title"><?php the_title(); ?></h1>
           </div>
         </a>
       </article>

@@ -240,6 +240,25 @@ section.full {
   vertical-align: top;
 }
 
+#whats .post .post-thumb {
+  position: relative;
+  width: 100%;
+  height: 20vw;
+  overflow: hidden;
+}
+
+#whats .post .post-thumb img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 50%;
+  right: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
 #whats .post .post-content {
   position: absolute;
   bottom: -50px;
@@ -250,16 +269,6 @@ section.full {
   padding: 25px;
   margin: 0 auto;
   background-color: #ffffff;
-}
-
-#whats .post .post-content .post-thumb {
-  width: 100%;
-  height: 100%;
-}
-
-#whats .post .post-content .post-thumb img {
-  min-width: 100%;
-  min-height: 100%;
 }
 
 #whats .post .post-content .post-content-date {
