@@ -547,22 +547,33 @@ section.full {
   margin-top: 40px;
 }
 
-#introduction .post {
-  width: 33.333%;
-  position: relative;
-  font-size: 1rem;
-  display: inline-block;
-  vertical-align: top;
-}
-
-#introduction .post .post-thumb {
-  position: relative;
+#introduction {
   width: 100%;
-  height: 18vw;
-  overflow: hidden;
 }
 
-#introduction .post .post-thumb img {
+#introduction article[class^='post-'] {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+}
+
+#introduction article[class^='post-'] > a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  position: relative;
+}
+
+#introduction article[class^='post-'] > a .post-thumb {
+  width: 360px;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+#introduction article[class^='post-'] > a .post-thumb img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -574,26 +585,32 @@ section.full {
   min-height: 100%;
 }
 
-#introduction .post .post-content {
+#introduction article[class^='post-'] > a .post-content {
   position: absolute;
-  bottom: -50px;
-  left: 5%;
+  width: calc( 100% - 360px + 60px);
+  padding: 15px 30px;
   box-sizing: border-box;
-  width: 90%;
-  height: 100px;
-  padding: 25px;
-  margin: 0 auto;
   background-color: #ffffff;
+  left: 300px;
+  font-size: 20px;
 }
 
-#introduction .post .post-content .post-content-date {
-  font-weight: bold;
+#introduction article[class^='post-'] > a .post-content .post-content-date {
   font-size: 14px;
-  margin-right: 10px;
 }
 
-#introduction .post .post-content .post-content-title {
-  margin-top: 15px;
+#introduction article[class^='post-'] > a .post-content .post-content-title {
+  line-height: 28px;
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#introduction article[class^='post-'] > a .post-content .post-content-body {
+  margin-top: 10px;
+}
+
+#introduction article[class^='post-'] > a .post-content .post-content-body p {
   font-size: 16px;
   overflow: hidden;
   white-space: nowrap;
