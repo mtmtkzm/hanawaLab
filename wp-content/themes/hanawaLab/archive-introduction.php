@@ -20,7 +20,7 @@
         <h1 class="post-content-title"><?php the_title(); ?></h1>
         <div class="post-content-body">
           <?php the_excerpt(); ?>  
-        </div>
+        </div>  
       </div>
     </a>
   </article>

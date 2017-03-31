@@ -333,6 +333,8 @@ section.full {
 
 #access .access-univ {
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   height: 30vw;
   font-size: 0;
 }
@@ -357,7 +359,7 @@ section.full {
   bottom: -10px;
   right: -30px;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #ffffff;
 }
 
 #access .access-univ .univ-map .univ-address h3 {
@@ -615,4 +617,42 @@ section.full {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+#lecture {
+  width: 100%;
+}
+
+#lecture .lectures {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#lecture .lectures article[class^='post-'] {
+  width: 30%;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#lecture .lectures article[class^='post-'] .post-content {
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+#lecture .lectures article[class^='post-'] .post-content .post-content-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#achievement {
+  width: 100%;
+  max-width: 1000px;
 }
