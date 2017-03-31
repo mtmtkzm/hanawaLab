@@ -52,7 +52,7 @@
           }
           initMap();
         </script>
-        <div class="univ-address">
+        <div class="univ-address dropshadow">
           <address>
             <h3>名古屋市立大学芸術工学部 大学院芸術工学研究科</h3>
             <p>
