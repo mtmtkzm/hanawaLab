@@ -175,6 +175,15 @@ main {
   margin: 0 auto 60px;
 }
 
+h3.h3 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin: 30px 0 15px;
+  border-left: 5px solid orange;
+  padding: .2em 0 .25em .5em;
+}
+
 .dropshadow {
   box-shadow: 0px 3px 4px rgba(64, 64, 64, 0.5);
 }
@@ -217,7 +226,7 @@ section.full {
 #about {
   background-color: #ffffff;
   padding: 65px 0;
-  width: 1100px;
+  width: 1000px;
   max-width: 90%;
 }
 
@@ -621,38 +630,88 @@ section.full {
 
 #lecture {
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #lecture .lectures {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
-#lecture .lectures article[class^='post-'] {
-  width: 30%;
+#lecture .lectures article[class^="post-"] {
+  width: 32%;
+  margin-bottom: 20px;
+}
+
+#lecture .lectures article[class^="post-"] .post-content {
+  width: 100%;
   box-sizing: border-box;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-#lecture .lectures article[class^='post-'] .post-content {
-  padding: 30px;
   background-color: #ffffff;
+  padding: 30px 20px;
 }
 
-#lecture .lectures article[class^='post-'] .post-content .post-content-title {
-  font-size: 26px;
+#lecture .lectures article[class^="post-"] .post-content .lecture-date {
+  display: -ms-flexbox;
+  display: flex;
   font-weight: bold;
+}
+
+#lecture .lectures article[class^="post-"] .post-content .lecture-date .lecture-day {
+  margin-right: .25em;
+}
+
+#lecture .lectures article[class^="post-"] .post-content .lecture-date .lecture-periods {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#lecture .lectures article[class^="post-"] .post-content .lecture-date .lecture-periods li:last-of-type:after {
+  content: "限";
+  margin-left: .25em;
+}
+
+#lecture .lectures article[class^="post-"] .post-content .lecture-date .lecture-periods li + li:before {
+  content: ",";
+  margin-right: .25em;
+}
+
+#lecture .lectures article[class^="post-"] .post-content .lecture-name {
+  font-size: 20px;
+  margin-top: .5em;
+  letter-spacing: .05em;
 }
 
 #achievement {
   width: 100%;
   max-width: 1000px;
+}
+
+#member {
+  width: 100%;
+  max-width: 1000px;
+}
+
+#member .member {
+  background-color: #ffffff;
+  padding: 65px;
+}
+
+#member .member .member-name {
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#member .member .member-introduction {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+#member .member .member-link {
+  text-decoration: underline;
 }

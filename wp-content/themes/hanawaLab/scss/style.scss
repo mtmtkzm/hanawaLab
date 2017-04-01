@@ -11,6 +11,7 @@
 @import 'module/background';
 @import 'module/site-title';
 @import 'module/h2';
+@import 'module/h3';
 @import 'module/dropshadow';
 
 
@@ -49,7 +50,7 @@ section {
 #about {
   background-color: $white;
   padding: 65px 0;
-  width: 1100px;
+  width: 1000px;
   max-width: 90%;
   .about-description {
     width: 90%;
@@ -415,24 +416,45 @@ section {
 
 #lecture {
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   .lectures {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    article[class^='post-'] {
-      width: 30%;
-      box-sizing: border-box;
-      max-width: 1000px;
-      margin: 0 auto;
+    article[class^="post-"] {
+      width: 32%;
+      margin-bottom: 20px;
       .post-content {
-        padding: 30px;
+        width: 100%;
+        box-sizing: border-box;
         background-color: $white;
-        .post-content-title {
-          font-size: 26px;
+        padding: 30px 20px;
+        .lecture-date {
+          display: flex;
           font-weight: bold;
+          .lecture-day {
+            margin-right: .25em;
+          }
+          .lecture-periods {
+            display: flex;
+            li {
+              &:last-of-type:after {
+                content: "限";
+                margin-left: .25em;
+              }
+              +li:before {
+                content: ",";
+                margin-right: .25em;
+              }
+            }
+          }
+        }
+        .lecture-name {
+          font-size: 20px;
+          margin-top: .5em;
+          letter-spacing: .05em;
         }
       }
     }
@@ -442,4 +464,24 @@ section {
 #achievement {
   width: 100%;
   max-width: 1000px;
+}
+
+#member {
+  width: 100%;
+  max-width: 1000px;
+  .member {
+    background-color: $white;
+    padding: 65px;
+    .member-name {
+      font-weight: bold;
+      line-height: 1.4;
+    }
+    .member-introduction {
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+    .member-link {
+      text-decoration: underline;
+    }
+  }
 }
