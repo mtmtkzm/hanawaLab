@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
   <script src="https://maps.googleapis.com/maps/api/js"></script>
   <?php wp_head(); ?>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
   <style type="text/css">
     /* wpのtopbarを削除・最後に戻す */
     html {
@@ -21,8 +20,8 @@
 <body <?php body_class(); ?> >
   <header id="header">
     <div class="logo-path sharetech">
-      <a href="/"><h2><img src="<?php bloginfo('template_directory'); ?>/images/common/logo.png"></h2></a>
-      <a class="directory" href="/">HOME</a>
+      <a class="logo-path-root" href="/"></a>
+      <a class="logo-path-directory js-directory" href=""></a>
     </div>
   </header>
   <nav>

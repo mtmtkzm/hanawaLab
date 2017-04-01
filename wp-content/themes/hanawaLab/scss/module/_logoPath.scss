@@ -10,8 +10,7 @@
 		&:hover {
 			text-decoration: underline;
 		}
-		&.directory {
-			padding-bottom: 5px;
+		&.logo-path-root {
 			&:before {
 				content: '';
 				display: inline-block;
@@ -22,6 +21,9 @@
 				background-color: $black;
 				transform: rotate(18deg);
 			}
+		}
+		&.logo-path-directory {
+			display: inline-block;
 		}
 	}
 }
