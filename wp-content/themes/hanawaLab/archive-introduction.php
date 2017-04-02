@@ -16,7 +16,6 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/top/thumbs.png">
       </div>
       <div class="post-content dropshadow" >
-        <span class="post-content-date"><?php echo get_the_date('Y.m'); ?></span>
         <h1 class="post-content-title"><?php the_title(); ?></h1>
         <div class="post-content-body">
           <?php the_excerpt(); ?>  

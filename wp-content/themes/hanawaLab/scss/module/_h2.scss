@@ -5,13 +5,20 @@
 		text-align: center;
 		margin: 24px 0;
 		@include media(sp) {
-			font-size: 30px;
+			font-size: 28px;
+			margin: 18px 0;
 		}
 	}
 	.icon {
 		display: block;
 		width: 80px;
 		margin: 10px auto 0;
+		img {
+			width: 100%;
+		}
+		@include media(sp) {
+			width: 65px;
+		}
 	}
 	&:after {
 		content: '';
@@ -20,5 +27,8 @@
 		height: 2px;
 		background-color: $orange;
 		margin: 0 auto 60px;
+		@include media(sp) {
+			margin-bottom: 30px;
+		}
 	}
 }

@@ -178,6 +178,10 @@ section {
       margin-bottom: 20px;
     }
   }
+  @include media(sp) {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
 }
 
 #mail {
@@ -186,11 +190,17 @@ section {
     font-family: 'Share Tech', sans-serif;
     font-size: 36px;
     font-weight: bold;
+    @include media(sp) {
+      font-size: 21px;
+      font-weight: normal;
+    }
   }
 }
 
 #access {
   margin-top: 50px;
+  padding: 0 15px;
+  box-sizing: border-box;
   .access-univ {
     width: 100%;
     max-width: 1000px;
@@ -208,6 +218,9 @@ section {
         width: 100%;
         height: 100%;
         background-color: lightgray;
+        @include media(sp) {
+          height: 100vw;
+        }
       }
       .univ-address {
         position: absolute;
@@ -222,7 +235,19 @@ section {
         p {
           margin-top: 10px;
         }
+        @include media(tb) {
+          padding: 15px;
+          bottom: -100px;
+          right: 10px;
+        }
+        @include media(sp) {
+          position: static;
+          box-shadow: none;
+        }
       }
+    }
+    @include media(sp) {
+      height: auto;
     }
   }
 }
@@ -406,8 +431,8 @@ section {
 #introduction {
   width: 100%;
   article[class^='post-'] {
-    width: 100%;
-    max-width: 1000px;
+    width: 1000px;
+    max-width: 100%;
     margin: 0 auto 20px;
     >a {
       display: flex;
@@ -415,7 +440,7 @@ section {
       -webkit-align-items: center;
       position: relative;
       .post-thumb {
-        width: 360px;
+        width: 36%;
         height: 180px;
         overflow: hidden;
         position: relative;
@@ -430,23 +455,33 @@ section {
           min-width: 100%;
           min-height: 100%;
         }
+        @include media(tb) {
+          width: 280px;
+          height: 180px;
+        }
+        @include media(sp) {
+          width: 100%;
+          height: 150px;
+        }
       }
       .post-content {
         position: absolute;
-        width: calc( 100% - 360px + 60px);
+        width: calc( 100% - 360px + 80px);
         padding: 15px 30px;
         box-sizing: border-box;
         background-color: $white;
-        left: 300px;
+        left: 280px;
         font-size: 20px;
         .post-content-date {
           font-size: 14px;
         }
         .post-content-title {
           line-height: 28px;
-          margin-top: 10px;
           font-size: 22px;
           font-weight: bold;
+          @include media(tb) {
+            font-size: 18px;
+          }
         }
         .post-content-body {
           margin-top: 10px;
@@ -455,10 +490,33 @@ section {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            @include media(tb) {
+              font-size: 14px;
+            }
+          }
+          @include media(sp) {
+            display: none;
           }
         }
+        @include media(tb) {
+          width: calc( 100% - 260px + 80px);
+          padding: 15px;
+          left: 180px;
+        }
+        @include media(sp) {
+          position: static;
+          width: 100%;
+          box-shadow: none;
+        }
+      }
+      @include media(sp) {
+        display: block;
       }
     }
+  }
+  @include media(tb) {
+    box-sizing: border-box;
+    padding: 0 15px;
   }
 }
 
@@ -466,6 +524,10 @@ section {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  @include media(tb) {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
   .lectures {
     display: flex;
     flex-wrap: wrap;
@@ -479,6 +541,9 @@ section {
         box-sizing: border-box;
         background-color: $white;
         padding: 30px 20px;
+        @include media(sp) {
+          padding: 15px;
+        }
         .lecture-date {
           display: flex;
           font-weight: bold;
@@ -503,7 +568,17 @@ section {
           font-size: 20px;
           margin-top: .5em;
           letter-spacing: .05em;
+          @include media(sp) {
+            font-size: 16px;
+          }
         }
+      }
+      @include media(tb) {
+        width: 49%;
+      }
+      @include media(sp) {
+        width: 99%;
+        margin-bottom: 10px;
       }
     }
   }
