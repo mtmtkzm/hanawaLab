@@ -139,12 +139,16 @@ main {
 }
 
 .site-title {
-  width: 1100px;
+  width: 1000px;
   max-width: 90%;
 }
 
 .site-title .site-title-main {
   margin-top: 18vh;
+}
+
+.site-title .site-title-main img {
+  width: 100%;
 }
 
 .site-title .site-title-sub {
@@ -189,6 +193,7 @@ h3.h3 {
 }
 
 body {
+  width: 100%;
   background-color: #ffffff;
   border: 15px solid #ffffff;
   box-sizing: border-box;
@@ -218,9 +223,40 @@ section.full {
   z-index: 2;
 }
 
+#gnav {
+  position: fixed;
+  top: 100px;
+  right: 15px;
+  z-index: 2;
+  font-size: 0;
+  font-weight: 700;
+}
+
+#gnav li {
+  text-align: right;
+}
+
+#gnav li a {
+  font-size: 15px;
+  margin-top: .5em;
+  display: inline-block;
+  padding: .3em 10px .4em 15px;
+  background-color: #ffffff;
+  color: #252525;
+  letter-spacing: .1em;
+}
+
+#gnav li.lecture {
+  margin-top: 35px;
+}
+
 #main {
   padding-bottom: 100px;
   min-height: 100vh;
+}
+
+.mv img {
+  width: 100%;
 }
 
 #about {
@@ -277,6 +313,12 @@ section.full {
   min-height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  #whats .post .post-thumb {
+    height: 26vw;
+  }
+}
+
 #whats .post .post-content {
   position: absolute;
   bottom: -50px;
@@ -303,35 +345,11 @@ section.full {
   text-overflow: ellipsis;
 }
 
-#gnav {
-  position: fixed;
-  top: 100px;
-  right: 0;
-  z-index: 2;
-  font-size: 0;
-  font-weight: 700;
-}
-
-#gnav li {
-  text-align: right;
-}
-
-#gnav li a {
-  font-size: 15px;
-  margin-top: .5em;
-  display: inline-block;
-  padding: .3em 30px .4em 20px;
-  background-color: #ffffff;
-  color: #252525;
-  letter-spacing: .1em;
-}
-
-#gnav li.lecture {
-  margin-top: 35px;
-}
-
-.mv img {
-  width: 100%;
+@media only screen and (max-width: 768px) {
+  #whats .post {
+    width: 100%;
+    margin-bottom: 100px;
+  }
 }
 
 #mail {
@@ -524,7 +542,6 @@ section.full {
 #footer {
   background-color: #ffffff;
   width: 100%;
-  height: 300px;
   text-align: center;
   padding: 50px 0 20px;
   font-family: 'Share Tech';
@@ -546,6 +563,12 @@ section.full {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 414px) {
+  #footer .footer-address {
+    font-size: 22px;
+  }
+}
+
 #footer .footer-link {
   margin-top: 60px;
 }
@@ -561,9 +584,22 @@ section.full {
   width: auto;
 }
 
+@media only screen and (max-width: 414px) {
+  #footer .footer-link .social-link li img {
+    height: 35px;
+    margin: 0 0 20px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #footer .footer-link .social-link li {
+    margin: 0;
+  }
+}
+
 #footer .copyright {
-  display: inline-block;
-  margin-top: 40px;
+  display: block;
+  margin-top: 30px;
 }
 
 #introduction {

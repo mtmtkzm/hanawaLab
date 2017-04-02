@@ -2,7 +2,8 @@
 <html lang="jp">
 <head>
   <meta charset="UTF-8">
-  <title><?php wp_title(); ?>名古屋市立大学 芸術工学研究科 塙研究室</title>
+  <title><?php wp_title(); ?>｜名古屋市立大学 芸術工学研究科 塙研究室</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
   <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -24,13 +25,4 @@
       <a class="logo-path-directory js-directory" href=""></a>
     </div>
   </header>
-  <nav>
-    <ul id="gnav">
-      <li><a href="/">トップページ</a></li>
-      <li><a href="/achievement">研究業績</a></li>
-      <li><a href="/introduction">研究紹介</a></li>
-      <li><a href="/contact">お問い合わせ</a></li>
-      <li class="lecture"><a href="/lecture">講義</a></li>
-    </ul>
-  </nav>
   <main id="main">
