@@ -6,6 +6,7 @@ h3.h3 {
   border-left: 5px solid $orange;
   padding: .2em 0 .25em .5em;
   @include media(sp) {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.3;
   }
 }

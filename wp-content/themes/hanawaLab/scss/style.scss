@@ -61,9 +61,12 @@ section {
       background-color: $white;
       color: $black;
       letter-spacing: .1em;
+      @include media(sp) {
+        font-size: 13px;
+      }
     }
     &.lecture {
-      margin-top: 35px;
+      margin-top: 24px;
     }
   }
 }
@@ -271,6 +274,9 @@ section {
     padding: 55px 45px;
     margin: 40px 15px 0;
   }
+  @include media(sp) {
+    padding: 40px 15px; 
+  }
   .article-post-title {
     display: block;
     font-size: 34px;
@@ -280,6 +286,14 @@ section {
     margin-bottom: 20px;
     line-height: 1.4em;
     letter-spacing: .05em;
+    @include media(tb) {
+      font-size: 27px;
+      padding-bottom: 20px;
+    }
+    @include media(sp) {
+      font-size: 18px;
+      padding-bottom: 12px;
+    }
   }
   .article-post-date {
     width: 100%;
@@ -287,17 +301,28 @@ section {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 80px;
+    @include media(sp) {
+      margin-bottom: 20px;
+    }
   }
   .article-post-content {
     h1 {
       font-size: 28px;
       font-weight: bold;
       background-color: #eee;
-      padding: 20px;
+      padding: 20px 0 20px 1em;
       border-radius: 5px;
       margin-top: 30px;
-      line-height: 1.4em;
+      line-height: 1.4;
       letter-spacing: .08em;
+      @include media(tb) {
+        font-size: 24px;
+        padding: 15px 0 15px 1em;
+      }
+      @include media(sp) {
+        font-size: 18px;
+        padding: 10px 0 10px .75em;
+      }
     }
     h2 {
       font-size: 24px;
@@ -307,6 +332,15 @@ section {
       margin-top: 30px;
       line-height: 1.4em;
       letter-spacing: .05em;
+      @include media(tb) {
+        font-size: 22px;
+        padding: 8px 0 8px .75em;
+      }
+      @include media(sp) {
+        font-size: 17px;
+        padding: 3px 0 3px .5em;
+        border-left-width: 6px;
+      }
     }
     h3 {
       font-size: 22px;
@@ -314,27 +348,52 @@ section {
       margin-top: 30px;
       padding-bottom: 10px;
       border-bottom: 2px solid #ddd;
+      @include media(tb) {
+        font-size: 20px;
+      }
+      @include media(sp) {
+        font-size: 17px;
+      }
     }
     h4 {
       font-size: 20px;
       font-weight: bold;
       margin-top: 20px;
+      @include media(sp) {
+        font-size: 17px;
+      }
     }
     h5 {
       font-size: 18px;
       font-weight: bold;
       margin-top: 20px;
+      @include media(sp) {
+        font-size: 16px;
+      }
     }
     h6 {
       font-size: 16px;
       font-weight: bold;
       margin-top: 20px;
+      @include media(sp) {
+        font-size: 14px;
+      }
     }
     p {
       font-size: 16px;
       line-height: 1.6em;
       letter-spacing: 0.08em;
       margin-top: 30px;
+      @include media(tb) {
+        font-size: 15px;
+      }
+      @include media(sp) {
+        font-size: 14px;
+      }
+    }
+    img {
+      max-width: 100%;
+      height: auto;
     }
     ul {
       margin-left: 2em;
@@ -351,6 +410,13 @@ section {
       line-height: 1.6em;
       padding-left: 1em;
       text-indent: -2em;
+      font-size: 16px;
+      @include media(tb) {
+        font-size: 15px;
+      }
+      @include media(sp) {
+        font-size: 14px;
+      }
     }
     strong {
       font-weight: bold;
@@ -372,6 +438,18 @@ section {
         top: 5px;
         left: 10px;
         z-index: 0;
+        @include media(tb) {
+          font-size: 8em;
+        }
+        @include media(sp) {
+          top: -20px;
+        }
+      }
+      @include media(tb) {
+        padding: 10px 45px 30px 60px;
+      }
+      @include media(sp) {
+        padding: 1px 20px 12px;
       }
     }
   }
@@ -597,14 +675,20 @@ section {
 }
 
 #achievement {
-  width: 100%;
-  max-width: 1000px;
+  width: 1000px;
+  max-width: calc( 100% - 30px );
   margin: 50px auto 0;
-  padding-bottom: 50px;
+  padding: 50px 60px;
+  box-sizing: border-box;
   background-color: $white;
+  @include media(tb) {
+    padding: 50px 45px;
+  }
+  @include media(sp) {
+    padding: 30px 15px;
+  }
   .achievements {
     margin: 0 auto;
-    width: 80%;
     li {
       line-height: 1.3;
       letter-spacing: .05em;
@@ -614,6 +698,9 @@ section {
       }
       +li {
         margin-top: 50px;
+        @include media(sp) {
+          margin-top: 20px;
+        }
       }
     }
   }
