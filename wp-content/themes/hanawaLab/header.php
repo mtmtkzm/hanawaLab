@@ -25,4 +25,13 @@
       <a class="logo-path-directory js-directory" href=""></a>
     </div>
   </header>
+  <nav>
+    <ul id="gnav">
+      <li><a href="/">トップページ</a></li>
+      <li><a href="/achievement">研究業績</a></li>
+      <li><a href="/introduction">研究紹介</a></li>
+      <li><a href="/contact">お問い合わせ</a></li>
+      <li class="lecture"><a href="/lecture">講義</a></li>
+    </ul>
+  </nav>
   <main id="main">
