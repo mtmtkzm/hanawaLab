@@ -1,6 +1,5 @@
 <?php get_header(); ?>
-
-<img src="<?php bloginfo('template_directory'); ?>/images/article/mv.png">
+<div class="mv"></div>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
   <section id="article" class="dropshadow">

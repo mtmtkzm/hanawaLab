@@ -1,7 +1,5 @@
 <?php get_header(); ?>
-<div class="mv">
-  <img src="<?php bloginfo('template_directory'); ?>/images/research/mv.png">
-</div>
+<div class="mv"></div>
 <section id="lecture">
   <div class="h2">
     <div class="lag-shadow icon">

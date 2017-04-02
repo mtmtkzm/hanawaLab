@@ -1,7 +1,5 @@
 <?php get_header(); ?>
-  <div class="mv">
-    <img src="<?php bloginfo('template_directory'); ?>/images/member/mv.png">
-  </div>
+  <div class="mv"></div>
   <section id="achievement" class="dropshadow">
     <div class="h2">
       <div class="lag-shadow icon">

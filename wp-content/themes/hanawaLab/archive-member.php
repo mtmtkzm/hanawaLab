@@ -1,7 +1,5 @@
 <?php get_header(); ?>
-  <div class="mv">
-    <img src="<?php bloginfo('template_directory'); ?>/images/member/mv.png">
-  </div>
+  <div class="mv"></div>
   <section id="member">
     <div class="dropshadow member">
       <div class="h2">
