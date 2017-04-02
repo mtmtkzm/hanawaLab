@@ -4,6 +4,9 @@
 		font-family: 'Share Tech', sans-serif;
 		text-align: center;
 		margin: 24px 0;
+		@include media(sp) {
+			font-size: 30px;
+		}
 	}
 	.icon {
 		display: block;

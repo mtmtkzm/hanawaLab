@@ -71,6 +71,9 @@ section {
 #main {
   padding-bottom: 100px;
   min-height: 100vh;
+  @include media(sp) {
+    padding-bottom: 20px;
+  }
 }
 
 .mv {
@@ -87,7 +90,12 @@ section {
   max-width: 90%;
   .about-description {
     margin: 0 auto;
-    line-height: 2em;
+    line-height: 1.8;
+    letter-spacing: .05em;
+    @include media(sp) {
+      line-height: 1.6;
+      text-align: justify;
+    }
   }
   .member-link {
     a {
@@ -102,7 +110,7 @@ section {
 #whats {
   width: 100%;
   font-size: 0;
-  margin: 50px 0;
+  margin: 50px 0 0;
   .post {
     width: 33.333%;
     position: relative;
@@ -128,6 +136,9 @@ section {
       @include media(tb) {
         height: 26vw;
       }
+      @include media(sp) {
+        height: 50vw;
+      }
     }
     .post-content {
       position: absolute;
@@ -135,14 +146,12 @@ section {
       left: 5%;
       box-sizing: border-box;
       width: 90%;
-      height: 100px;
       padding: 25px;
       margin: 0 auto;
       background-color: $white;
       .post-content-date {
         font-weight: bold;
         font-size: 14px;
-        margin-right: 10px;
       }
       .post-content-title {
         margin-top: 15px;
@@ -150,11 +159,23 @@ section {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        @include media(sp) {
+          margin-top: 5px;
+        }
+      }
+      @include media(sp) {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        padding: 12px 8px;
       }
     }
     @include media(tb) {
       width: 100%;
       margin-bottom: 100px;
+    }
+    @include media(sp) {
+      margin-bottom: 20px;
     }
   }
 }
