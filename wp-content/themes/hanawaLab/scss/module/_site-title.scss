@@ -6,10 +6,23 @@
 		img {
 			width: 100%;
 		}
+		@include media(tb) {
+			margin-top: 10vh;
+		}
+		@include media(sp) {
+			margin-top: 8vh;
+		}
 	}
 	.site-title-sub {
 		font-size: 23px;
 		margin-top: 2vh;
 		margin-bottom: 18vh;
+		@include media(tb) {
+			margin-bottom: 10vh;
+		}
+		@include media(sp) {
+			margin-bottom: 8vh;
+			font-size: 18px;
+		}
 	}
 }

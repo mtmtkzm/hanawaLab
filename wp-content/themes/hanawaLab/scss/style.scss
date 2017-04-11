@@ -115,6 +115,9 @@ section {
       }
     }
   }
+  @include media(sp) {
+    padding-top: 30px;
+  }
 }
 
 #whats {
@@ -471,9 +474,8 @@ section {
 #footer {
   background-color: $white;
   width: 100%;
-  // height: 300px;
   text-align: center;
-  padding: 50px 0 20px;
+  padding: 30px 0 20px;
   font-family: 'Share Tech';
   section {
     padding: 0;
@@ -520,6 +522,7 @@ section {
 
 #introduction {
   width: 100%;
+  margin-top: 30px;
   article[class^='post-'] {
     width: 1000px;
     max-width: 100%;
@@ -613,7 +616,7 @@ section {
 #lecture {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   @include media(tb) {
     padding: 0 15px;
     box-sizing: border-box;
@@ -707,8 +710,11 @@ section {
 }
 
 #member {
-  width: 100%;
-  max-width: 1000px;
+  width: 1000px;
+  max-width: 100%;
+  margin-top: 30px;
+  padding: 0 15px;
+  box-sizing: border-box;
   .member {
     background-color: $white;
     padding: 65px;
@@ -722,6 +728,12 @@ section {
     }
     .member-link {
       text-decoration: underline;
+    }
+    @include media(tb) {
+      padding: 30px;
+    }
+    @include media(sp) {
+      padding: 30px 15px;
     }
   }
 }

@@ -11,7 +11,11 @@
   <article <?php post_class(); ?>>
     <a href="<?php the_permalink(); ?>">
       <div class="post-thumb">
-        <img src="<?php bloginfo('template_directory'); ?>/images/top/thumbs.png">
+        <?php if(has_post_thumbnail()): ?>
+          <?php the_post_thumbnail('index_thumbnail'); ?>
+        <?php else: ?>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/top/eyecatch-default.png">
+        <?php endif; ?>
       </div>
       <div class="post-content dropshadow" >
         <h1 class="post-content-title"><?php the_title(); ?></h1>

@@ -5,6 +5,10 @@
 		text-align: center;
 		margin: 24px 0;
 		@include media(sp) {
+			font-size: 30px;
+			margin: 20px 0;
+		}
+		@include media(sp) {
 			font-size: 28px;
 			margin: 18px 0;
 		}

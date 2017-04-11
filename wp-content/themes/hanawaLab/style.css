@@ -187,10 +187,35 @@ main {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .site-title .site-title-main {
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .site-title .site-title-main {
+    margin-top: 8vh;
+  }
+}
+
 .site-title .site-title-sub {
   font-size: 23px;
   margin-top: 2vh;
   margin-bottom: 18vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-title .site-title-sub {
+    margin-bottom: 10vh;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .site-title .site-title-sub {
+    margin-bottom: 8vh;
+    font-size: 18px;
+  }
 }
 
 .h2 h2 {
@@ -198,6 +223,13 @@ main {
   font-family: 'Share Tech', sans-serif;
   text-align: center;
   margin: 24px 0;
+}
+
+@media only screen and (max-width: 414px) {
+  .h2 h2 {
+    font-size: 30px;
+    margin: 20px 0;
+  }
 }
 
 @media only screen and (max-width: 414px) {
@@ -379,6 +411,12 @@ section.full {
 
 #about .member-link a:hover {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 414px) {
+  #about {
+    padding-top: 30px;
+  }
 }
 
 #whats {
@@ -859,7 +897,7 @@ section.full {
   background-color: #ffffff;
   width: 100%;
   text-align: center;
-  padding: 50px 0 20px;
+  padding: 30px 0 20px;
   font-family: 'Share Tech';
 }
 
@@ -920,6 +958,7 @@ section.full {
 
 #introduction {
   width: 100%;
+  margin-top: 30px;
 }
 
 #introduction article[class^='post-'] {
@@ -1051,7 +1090,7 @@ section.full {
 #lecture {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 30px auto 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1185,8 +1224,11 @@ section.full {
 }
 
 #member {
-  width: 100%;
-  max-width: 1000px;
+  width: 1000px;
+  max-width: 100%;
+  margin-top: 30px;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 #member .member {
@@ -1206,4 +1248,16 @@ section.full {
 
 #member .member .member-link {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  #member .member {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #member .member {
+    padding: 30px 15px;
+  }
 }
