@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/*
+Theme Name: テーマのタイトル
+Author: 作成者名
+Author URI: 作成者のURL（あれば）
+Description: このテーマについての説明文
+Version: バージョンを記入（1.0とか）
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -328,6 +337,12 @@ section.full {
   z-index: 2;
   font-size: 0;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 414px) {
+  #gnav {
+    top: 30px;
+  }
 }
 
 #gnav li {
