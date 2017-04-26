@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
   <?php wp_head(); ?>
   <style type="text/css">
     /* wpのtopbarを削除・最後に戻す */

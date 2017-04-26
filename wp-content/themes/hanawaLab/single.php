@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="mv"></div>
+<div class="mv mv-news"></div>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
   <section id="article" class="dropshadow">

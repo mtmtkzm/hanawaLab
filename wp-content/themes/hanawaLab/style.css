@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme Name: テーマのタイトル
-Author: 作成者名
-Author URI: 作成者のURL（あれば）
+Theme Name: HanawaLab
+Author: HanawaLab
+Author URI: http://hanawalab.com
 Description: このテーマについての説明文
 Version: バージョンを記入（1.0とか）
 License: GNU General Public License v2 or later
@@ -55,22 +55,41 @@ table {
 
 body {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   text-rendering: auto;
   font-size: 16px;
   font-family: "NotoSansCJKjp", sans-serif;
   font-weight: 400;
   color: #252525;
-  background-color: #fff;
+  width: 100%;
+  background-color: #ffffff;
+  border: 15px solid #ffffff;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 414px) {
   body {
     font-size: 15px;
   }
+}
+
+a {
+  color: #252525;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+section.full {
+  width: 100%;
 }
 
 .clearfix {
@@ -342,30 +361,278 @@ h3.h3 {
   transform: translateY(5px);
 }
 
-body {
+#article {
   width: 100%;
+  max-width: 1000px;
   background-color: #ffffff;
-  border: 15px solid #ffffff;
+  padding: 80px;
+  margin-top: 40px;
   box-sizing: border-box;
 }
 
-a {
-  color: #252525;
-  text-decoration: none;
+@media only screen and (max-width: 768px) {
+  #article {
+    width: calc( 100% - 30px);
+    padding: 55px 45px;
+    margin: 40px 15px 0;
+  }
 }
 
-a:hover {
-  color: inherit;
-  text-decoration: none;
+@media only screen and (max-width: 414px) {
+  #article {
+    padding: 40px 15px;
+  }
 }
 
-section {
-  margin: 0 auto;
-  padding-top: 50px;
+#article .article-post-title {
+  display: block;
+  font-size: 34px;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 35px;
+  margin-bottom: 20px;
+  line-height: 1.4em;
+  letter-spacing: .05em;
 }
 
-section.full {
+@media only screen and (max-width: 768px) {
+  #article .article-post-title {
+    font-size: 27px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-title {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+}
+
+#article .article-post-date {
   width: 100%;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-date {
+    margin-bottom: 20px;
+  }
+}
+
+#article .article-post-content h1 {
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #eee;
+  padding: 20px 0 20px 1em;
+  border-radius: 5px;
+  margin-top: 30px;
+  line-height: 1.4;
+  letter-spacing: .08em;
+}
+
+@media only screen and (max-width: 768px) {
+  #article .article-post-content h1 {
+    font-size: 24px;
+    padding: 15px 0 15px 1em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content h1 {
+    font-size: 18px;
+    padding: 10px 0 10px .75em;
+  }
+}
+
+#article .article-post-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  border-left: 8px solid #ddd;
+  padding: 15px 0 15px 1em;
+  margin-top: 30px;
+  line-height: 1.4em;
+  letter-spacing: .05em;
+}
+
+@media only screen and (max-width: 768px) {
+  #article .article-post-content h2 {
+    font-size: 22px;
+    padding: 8px 0 8px .75em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content h2 {
+    font-size: 17px;
+    padding: 3px 0 3px .5em;
+    border-left-width: 6px;
+  }
+}
+
+#article .article-post-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+@media only screen and (max-width: 768px) {
+  #article .article-post-content h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content h3 {
+    font-size: 17px;
+  }
+}
+
+#article .article-post-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content h4 {
+    font-size: 17px;
+  }
+}
+
+#article .article-post-content h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content h5 {
+    font-size: 16px;
+  }
+}
+
+#article .article-post-content h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content h6 {
+    font-size: 14px;
+  }
+}
+
+#article .article-post-content p {
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: 0.08em;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  #article .article-post-content p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content p {
+    font-size: 13px;
+  }
+}
+
+#article .article-post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#article .article-post-content ul {
+  margin-left: 2em;
+  margin-top: 20px;
+  list-style: square inside;
+}
+
+#article .article-post-content ol {
+  margin-top: 20px;
+  margin-left: 2em;
+  list-style: decimal inside;
+}
+
+#article .article-post-content li {
+  margin-top: 5px;
+  line-height: 1.6em;
+  padding-left: 1em;
+  text-indent: -2em;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  #article .article-post-content li {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content li {
+    font-size: 14px;
+  }
+}
+
+#article .article-post-content strong {
+  font-weight: bold;
+}
+
+#article .article-post-content em {
+  font-style: italic;
+}
+
+#article .article-post-content blockquote {
+  padding: 20px 50px 30px 80px;
+  margin-top: 30px;
+  text-align: justify;
+  background-color: #eee;
+  position: relative;
+}
+
+#article .article-post-content blockquote:before {
+  content: "”";
+  position: absolute;
+  font-size: 10em;
+  color: #ccc;
+  top: 5px;
+  left: 10px;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #article .article-post-content blockquote:before {
+    font-size: 8em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content blockquote:before {
+    top: -20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #article .article-post-content blockquote {
+    padding: 10px 45px 30px 60px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #article .article-post-content blockquote {
+    padding: 1px 20px 12px;
+  }
 }
 
 #header {
@@ -501,7 +768,10 @@ section.full {
   width: 100%;
   height: 30vw;
   background: no-repeat center center/cover;
-  background-image: url("./images/article/mv.png");
+}
+
+.mv.mv-news {
+  background-image: url("./images/article/news.png");
 }
 
 @media only screen and (max-width: 768px) {
@@ -532,6 +802,7 @@ section.full {
 
 @media only screen and (max-width: 414px) {
   #about .about-description {
+    font-size: 14px;
     line-height: 1.6;
     text-align: justify;
   }
@@ -742,280 +1013,6 @@ section.full {
 @media only screen and (max-width: 414px) {
   #access .access-univ {
     height: auto;
-  }
-}
-
-#article {
-  width: 100%;
-  max-width: 1000px;
-  background-color: #ffffff;
-  padding: 80px;
-  margin-top: 40px;
-  box-sizing: border-box;
-}
-
-@media only screen and (max-width: 768px) {
-  #article {
-    width: calc( 100% - 30px);
-    padding: 55px 45px;
-    margin: 40px 15px 0;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #article {
-    padding: 40px 15px;
-  }
-}
-
-#article .article-post-title {
-  display: block;
-  font-size: 34px;
-  font-weight: bold;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 35px;
-  margin-bottom: 20px;
-  line-height: 1.4em;
-  letter-spacing: .05em;
-}
-
-@media only screen and (max-width: 768px) {
-  #article .article-post-title {
-    font-size: 27px;
-    padding-bottom: 20px;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-title {
-    font-size: 18px;
-    padding-bottom: 12px;
-  }
-}
-
-#article .article-post-date {
-  width: 100%;
-  text-align: right;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 80px;
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-date {
-    margin-bottom: 20px;
-  }
-}
-
-#article .article-post-content h1 {
-  font-size: 28px;
-  font-weight: bold;
-  background-color: #eee;
-  padding: 20px 0 20px 1em;
-  border-radius: 5px;
-  margin-top: 30px;
-  line-height: 1.4;
-  letter-spacing: .08em;
-}
-
-@media only screen and (max-width: 768px) {
-  #article .article-post-content h1 {
-    font-size: 24px;
-    padding: 15px 0 15px 1em;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content h1 {
-    font-size: 18px;
-    padding: 10px 0 10px .75em;
-  }
-}
-
-#article .article-post-content h2 {
-  font-size: 24px;
-  font-weight: bold;
-  border-left: 8px solid #ddd;
-  padding: 15px 0 15px 1em;
-  margin-top: 30px;
-  line-height: 1.4em;
-  letter-spacing: .05em;
-}
-
-@media only screen and (max-width: 768px) {
-  #article .article-post-content h2 {
-    font-size: 22px;
-    padding: 8px 0 8px .75em;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content h2 {
-    font-size: 17px;
-    padding: 3px 0 3px .5em;
-    border-left-width: 6px;
-  }
-}
-
-#article .article-post-content h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-top: 30px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #ddd;
-}
-
-@media only screen and (max-width: 768px) {
-  #article .article-post-content h3 {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content h3 {
-    font-size: 17px;
-  }
-}
-
-#article .article-post-content h4 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content h4 {
-    font-size: 17px;
-  }
-}
-
-#article .article-post-content h5 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content h5 {
-    font-size: 16px;
-  }
-}
-
-#article .article-post-content h6 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content h6 {
-    font-size: 14px;
-  }
-}
-
-#article .article-post-content p {
-  font-size: 16px;
-  line-height: 1.6em;
-  letter-spacing: 0.08em;
-  margin-top: 30px;
-}
-
-@media only screen and (max-width: 768px) {
-  #article .article-post-content p {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content p {
-    font-size: 14px;
-  }
-}
-
-#article .article-post-content img {
-  max-width: 100%;
-  height: auto;
-}
-
-#article .article-post-content ul {
-  margin-left: 2em;
-  margin-top: 20px;
-  list-style: square inside;
-}
-
-#article .article-post-content ol {
-  margin-top: 20px;
-  margin-left: 2em;
-  list-style: decimal inside;
-}
-
-#article .article-post-content li {
-  margin-top: 5px;
-  line-height: 1.6em;
-  padding-left: 1em;
-  text-indent: -2em;
-  font-size: 16px;
-}
-
-@media only screen and (max-width: 768px) {
-  #article .article-post-content li {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content li {
-    font-size: 14px;
-  }
-}
-
-#article .article-post-content strong {
-  font-weight: bold;
-}
-
-#article .article-post-content em {
-  font-style: italic;
-}
-
-#article .article-post-content blockquote {
-  padding: 20px 50px 30px 80px;
-  margin-top: 30px;
-  text-align: justify;
-  background-color: #eee;
-  position: relative;
-}
-
-#article .article-post-content blockquote:before {
-  content: "”";
-  position: absolute;
-  font-size: 10em;
-  color: #ccc;
-  top: 5px;
-  left: 10px;
-  z-index: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  #article .article-post-content blockquote:before {
-    font-size: 8em;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content blockquote:before {
-    top: -20px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #article .article-post-content blockquote {
-    padding: 10px 45px 30px 60px;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  #article .article-post-content blockquote {
-    padding: 1px 20px 12px;
   }
 }
 
