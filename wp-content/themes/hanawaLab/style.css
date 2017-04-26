@@ -299,6 +299,49 @@ h3.h3 {
   box-shadow: 0px 3px 4px rgba(64, 64, 64, 0.5);
 }
 
+.hamburger {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+
+.hamburger.is-open .hamburger-item:nth-child(1) {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.hamburger.is-open .hamburger-item:nth-child(2) {
+  transform: translateX(8px);
+  opacity: 0;
+}
+
+.hamburger.is-open .hamburger-item:nth-child(3) {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+.hamburger-item {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 2px;
+  top: 17px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #000;
+  transition: .2s ease-out;
+}
+
+.hamburger-item:nth-child(1) {
+  transform: translateY(-5px);
+}
+
+.hamburger-item:nth-child(3) {
+  transform: translateY(5px);
+}
+
 body {
   width: 100%;
   background-color: #ffffff;
@@ -330,6 +373,22 @@ section.full {
   z-index: 2;
 }
 
+.gnav-trigger {
+  display: none;
+  position: fixed;
+  left: auto;
+  right: 14px;
+  top: 30px;
+  background-color: #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+@media only screen and (max-width: 414px) {
+  .gnav-trigger {
+    display: block;
+  }
+}
+
 #gnav {
   position: fixed;
   top: 100px;
@@ -341,15 +400,73 @@ section.full {
 
 @media only screen and (max-width: 414px) {
   #gnav {
-    top: 30px;
+    top: 66px;
   }
 }
 
-#gnav li {
-  text-align: right;
+#gnav.is-open > li {
+  right: 0;
+  opacity: 1;
 }
 
-#gnav li a {
+#gnav > li {
+  text-align: right;
+  position: relative;
+  right: 0;
+}
+
+@media only screen and (max-width: 414px) {
+  #gnav > li {
+    right: -150px;
+    opacity: 0;
+  }
+}
+
+#gnav > li:nth-child(0) {
+  transition: right 0.2s ease-in 0.2s, opacity 0.1s ease-out 0s;
+}
+
+#gnav > li:nth-child(1) {
+  transition: right 0.2s ease-in 0.22s, opacity 0.1s ease-out 0.03s;
+}
+
+#gnav > li:nth-child(2) {
+  transition: right 0.2s ease-in 0.24s, opacity 0.1s ease-out 0.06s;
+}
+
+#gnav > li:nth-child(3) {
+  transition: right 0.2s ease-in 0.26s, opacity 0.1s ease-out 0.09s;
+}
+
+#gnav > li:nth-child(4) {
+  transition: right 0.2s ease-in 0.28s, opacity 0.1s ease-out 0.12s;
+}
+
+#gnav > li:nth-child(5) {
+  transition: right 0.2s ease-in 0.3s, opacity 0.1s ease-out 0.15s;
+}
+
+#gnav > li:nth-child(6) {
+  transition: right 0.2s ease-in 0.32s, opacity 0.1s ease-out 0.18s;
+}
+
+#gnav > li:nth-child(7) {
+  transition: right 0.2s ease-in 0.34s, opacity 0.1s ease-out 0.21s;
+}
+
+#gnav > li:nth-child(8) {
+  transition: right 0.2s ease-in 0.36s, opacity 0.1s ease-out 0.24s;
+}
+
+#gnav > li:nth-child(9) {
+  transition: right 0.2s ease-in 0.38s, opacity 0.1s ease-out 0.27s;
+}
+
+#gnav > li:nth-child(10) {
+  transition: right 0.2s ease-in 0.4s, opacity 0.1s ease-out 0.3s;
+}
+
+#gnav > li a {
   font-size: 15px;
   margin-top: .5em;
   display: inline-block;
@@ -360,12 +477,12 @@ section.full {
 }
 
 @media only screen and (max-width: 414px) {
-  #gnav li a {
+  #gnav > li a {
     font-size: 13px;
   }
 }
 
-#gnav li.lecture {
+#gnav > li.lecture {
   margin-top: 24px;
 }
 

@@ -1,0 +1,48 @@
+$validArea:    36px; // タップ可能エリアの一辺の長さ
+$menuBarWidth: 16px; // バンズ（or肉）の幅
+$menuBarHeight: 2px; // バンズ（or肉）の高さ
+$menuBarGap:    5px; // バンズと肉の隙間
+
+.hamburger {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: $validArea;
+  height: $validArea;
+
+  &.is-open {
+    .hamburger-item {
+      &:nth-child(1) {
+        transform: translateY(0px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        transform: translateX( $menuBarWidth / 2 );
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(0px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.hamburger-item {
+  position: absolute;
+  display: block;
+  width: $menuBarWidth;
+  height: $menuBarHeight;
+  top: ( $validArea - $menuBarHeight ) / 2;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #000;
+  transition: .2s ease-out;
+  &:nth-child(1) {
+    transform: translateY(-$menuBarGap);
+  }
+  &:nth-child(2) {}
+  &:nth-child(3) {
+    transform: translateY($menuBarGap);
+  }
+}

@@ -26,12 +26,12 @@
     </div>
   </header>
   <nav>
-    <div class="gnav-trigger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul id="gnav">
+    <a class="hamburger gnav-trigger js-menu-trigger">
+      <span class="hamburger-item"></span>
+      <span class="hamburger-item"></span>
+      <span class="hamburger-item"></span>
+    </a>
+    <ul id="gnav" class="js-header-menu">
       <li><a href="/">トップページ</a></li>
       <li><a href="/achievement">研究業績</a></li>
       <li><a href="/introduction">研究紹介</a></li>

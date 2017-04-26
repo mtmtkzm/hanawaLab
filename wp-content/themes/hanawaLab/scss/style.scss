@@ -23,7 +23,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import 'module/h2';
 @import 'module/h3';
 @import 'module/dropshadow';
-
+@import 'module/hamburger';
 
 body {
   width: 100%;
@@ -54,6 +54,20 @@ section {
   z-index: 2;
 }
 
+.gnav-trigger {
+  display: none;
+  position: fixed;
+  left: auto;
+  right: 14px;
+  top: 30px;
+  background-color: #fff;
+  border-radius: 5px 0 0 5px;
+
+  @include media(sp) {
+    display: block;
+  }
+}
+
 #gnav {
   position: fixed;
   top: 100px;
@@ -61,11 +75,35 @@ section {
   z-index: 2;
   font-size: 0;
   font-weight: 700;
+
   @include media(sp) {
-    top: 30px;
+    top: 66px;
   }
-  li {
+
+  &.is-open {
+    > li {
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  > li {
     text-align: right;
+    position: relative;
+    right: 0;
+
+    @include media(sp) {
+      right: -150px;
+      opacity: 0;
+    }
+
+    @for $i from 0 through 10 {
+      &:nth-child( #{$i} ) {
+        transition: right .2s ease-in 0.02s*$i+0.2,
+                    opacity .1s ease-out 0.03s*$i;
+      }
+    }
+
     a {
       font-size: 15px;
       margin-top: .5em;
