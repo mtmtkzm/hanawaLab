@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="mv"></div>
+  <div class="mv mv-achievement"></div>
   <section id="achievement" class="dropshadow">
     <div class="h2">
       <div class="lag-shadow icon">

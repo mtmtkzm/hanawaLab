@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="mv"></div>
+  <div class="mv mv-member"></div>
   <section id="member">
     <div class="dropshadow member">
       <div class="h2">

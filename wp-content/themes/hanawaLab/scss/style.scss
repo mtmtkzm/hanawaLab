@@ -22,6 +22,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import 'module/site-title';
 @import 'module/h2';
 @import 'module/h3';
+@import 'module/mv';
 @import 'module/dropshadow';
 @import 'module/hamburger';
 @import 'module/article';
@@ -104,24 +105,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   min-height: 100vh;
   @include media(sp) {
     padding-bottom: 20px;
-  }
-}
-
-.mv {
-  width: 100%;
-  height: 30vw;
-  background: no-repeat center center/cover;
-
-  &.mv-news {
-    background-image: url('./images/article/news.png');
-  }
-
-  @include media(tb) {
-    height: 40vw;
-  }
-
-  @include media(sp) {
-    height: 80vw;
   }
 }
 

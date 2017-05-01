@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="mv"></div>
+<div class="mv mv-introduction"></div>
 <section id="introduction">
   <div class="h2">
     <div class="lag-shadow icon">

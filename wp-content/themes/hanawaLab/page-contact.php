@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="mv"></div>
+  <div class="mv mv-contact"></div>
   <section id="mail">
     <div class="h2">
       <div class="lag-shadow icon"><img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png"></div>
