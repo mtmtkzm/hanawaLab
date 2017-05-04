@@ -41,10 +41,10 @@
               position: center,
               map: map,
               icon: new google.maps.MarkerImage(
-                'http://localhost:8888/wp-content/themes/hanawaLab/images/common/logo.png',
-                new google.maps.Size(44,40), // size
+                '/wp-content/themes/hanawaLab/images/contact/pin.png',
+                new google.maps.Size(46,66), // size
                 new google.maps.Point(0,0),  // origin
-                new google.maps.Point(22,20) // anchor
+                new google.maps.Point(23,33) // anchor
               )
             });
           }
