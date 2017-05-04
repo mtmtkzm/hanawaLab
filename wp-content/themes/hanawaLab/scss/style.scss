@@ -40,6 +40,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   top: 30px;
   background-color: #fff;
   border-radius: 5px 0 0 5px;
+  z-index: 1;
 
   @include media(sp) {
     display: block;
@@ -50,7 +51,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   position: fixed;
   top: 100px;
   right: 15px;
-  z-index: 2;
+  z-index: 10;
   font-size: 0;
   font-weight: 700;
 
@@ -90,6 +91,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       background-color: $white;
       color: $black;
       letter-spacing: .1em;
+      &:hover {
+
+      }
       @include media(sp) {
         font-size: 13px;
       }
@@ -110,7 +114,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 #about {
   background-color: $white;
-  padding: 65px 5%;
+  padding: 65px 4%;
   box-sizing: border-box;
   width: 1000px;
   max-width: 90%;
@@ -120,7 +124,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     letter-spacing: .05em;
     @include media(sp) {
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 1.8;
       text-align: justify;
     }
   }
@@ -182,6 +186,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       .post-content-date {
         font-weight: bold;
         font-size: 14px;
+        @include media (sp) {
+          font-size: 12px;
+        }
       }
       .post-content-title {
         margin-top: 15px;
@@ -191,13 +198,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
         text-overflow: ellipsis;
         @include media(sp) {
           margin-top: 5px;
+          font-size: 14px;
         }
       }
       @include media(sp) {
         position: static;
         width: 100%;
         box-shadow: none;
-        padding: 12px 8px;
+        padding: 12px 15px;
       }
     }
     @include media(tb) {
@@ -289,9 +297,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       border-bottom: 4px solid black;
       font-size: 22px;
       margin-top: 10px;
-    }
-    p {
-      
     }
   }
 }
@@ -397,6 +402,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
           line-height: 28px;
           font-size: 22px;
           font-weight: bold;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
           @include media(tb) {
             font-size: 18px;
           }
@@ -517,19 +525,27 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   }
   .achievements {
     margin: 0 auto;
+
     li {
       line-height: 1.3;
       letter-spacing: .05em;
+
       h3 {
         font-weight: bold;
         margin-bottom: .75em;
       }
+
       +li {
         margin-top: 50px;
+
         @include media(sp) {
           margin-top: 20px;
         }
       }
+    }
+
+    p {
+      line-height: 1.6;
     }
   }
 }
@@ -545,11 +561,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     padding: 65px;
     .member-name {
       font-weight: bold;
-      line-height: 1.4;
+      line-height: 1.8;
     }
     .member-introduction {
       margin-top: 10px;
-      line-height: 1.4;
+      line-height: 1.6;
     }
     .member-link {
       text-decoration: underline;

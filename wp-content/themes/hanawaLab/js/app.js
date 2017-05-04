@@ -9,7 +9,7 @@ function formatPathname() {
   currentPath = currentPath.substr(1); // 先頭の/を削除
 
   var startPoint = currentPath.indexOf('/');
-  if (startPoint != -1) {
+  if (startPoint !== -1) {
     currentPath = currentPath.substr(0, startPoint);
   }
   return currentPath;

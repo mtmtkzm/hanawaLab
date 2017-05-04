@@ -5,7 +5,7 @@
     <div class="lag-shadow icon">
       <img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png">
     </div>
-    <h2>Lecture 2017</h2>
+    <h2>Lecture</h2>
   </div>
   <div class="lectures">
     <?php if(have_posts()): while(have_posts()): the_post(); ?>

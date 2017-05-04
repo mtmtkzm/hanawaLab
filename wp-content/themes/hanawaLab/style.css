@@ -350,12 +350,6 @@ h3.h3 {
   }
 }
 
-@media only screen and (max-width: 414px) {
-  .mv {
-    height: 80vw;
-  }
-}
-
 .dropshadow {
   box-shadow: 0px 3px 4px rgba(64, 64, 64, 0.5);
 }
@@ -573,8 +567,8 @@ h3.h3 {
 
 #article .article-post-content p {
   font-size: 16px;
-  line-height: 1.6em;
-  letter-spacing: 0.08em;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
   margin-top: 30px;
 }
 
@@ -587,6 +581,7 @@ h3.h3 {
 @media only screen and (max-width: 414px) {
   #article .article-post-content p {
     font-size: 13px;
+    line-height: 1.8;
   }
 }
 
@@ -690,6 +685,7 @@ h3.h3 {
   top: 30px;
   background-color: #fff;
   border-radius: 5px 0 0 5px;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 414px) {
@@ -702,7 +698,7 @@ h3.h3 {
   position: fixed;
   top: 100px;
   right: 15px;
-  z-index: 2;
+  z-index: 10;
   font-size: 0;
   font-weight: 700;
 }
@@ -808,7 +804,7 @@ h3.h3 {
 
 #about {
   background-color: #ffffff;
-  padding: 65px 5%;
+  padding: 65px 4%;
   box-sizing: border-box;
   width: 1000px;
   max-width: 90%;
@@ -823,7 +819,7 @@ h3.h3 {
 @media only screen and (max-width: 414px) {
   #about .about-description {
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.8;
     text-align: justify;
   }
 }
@@ -903,6 +899,12 @@ h3.h3 {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 414px) {
+  #whats .post .post-content .post-content-date {
+    font-size: 12px;
+  }
+}
+
 #whats .post .post-content .post-content-title {
   margin-top: 15px;
   font-size: 16px;
@@ -914,6 +916,7 @@ h3.h3 {
 @media only screen and (max-width: 414px) {
   #whats .post .post-content .post-content-title {
     margin-top: 5px;
+    font-size: 14px;
   }
 }
 
@@ -922,7 +925,7 @@ h3.h3 {
     position: static;
     width: 100%;
     box-shadow: none;
-    padding: 12px 8px;
+    padding: 12px 15px;
   }
 }
 
@@ -1176,6 +1179,9 @@ h3.h3 {
   line-height: 28px;
   font-size: 22px;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1372,6 +1378,10 @@ h3.h3 {
   }
 }
 
+#achievement .achievements p {
+  line-height: 1.6;
+}
+
 #member {
   width: 1000px;
   max-width: 100%;
@@ -1387,12 +1397,12 @@ h3.h3 {
 
 #member .member .member-name {
   font-weight: bold;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 #member .member .member-introduction {
   margin-top: 10px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 #member .member .member-link {

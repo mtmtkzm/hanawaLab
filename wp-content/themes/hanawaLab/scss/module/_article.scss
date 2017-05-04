@@ -125,14 +125,15 @@
     }
     p {
       font-size: 16px;
-      line-height: 1.6em;
-      letter-spacing: 0.08em;
+      line-height: 1.6;
+      letter-spacing: 0.1em;
       margin-top: 30px;
       @include media(tb) {
         font-size: 15px;
       }
       @include media(sp) {
         font-size: 13px;
+        line-height: 1.8;
       }
     }
     img {
