@@ -3,7 +3,7 @@
 <section id="lecture">
   <div class="h2">
     <div class="lag-shadow icon">
-      <img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png">
+      <img src="<?php bloginfo('template_directory'); ?>/images/icon/i-lecture.png">
     </div>
     <h2>Lecture</h2>
   </div>

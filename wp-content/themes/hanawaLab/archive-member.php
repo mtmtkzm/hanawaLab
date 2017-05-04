@@ -4,7 +4,7 @@
     <div class="dropshadow member">
       <div class="h2">
         <div class="lag-shadow icon">
-          <img src="<?php bloginfo('template_directory'); ?>/images/top/i-about.png">
+          <img src="<?php bloginfo('template_directory'); ?>/images/icon/i-about.png">
         </div>
         <h2>The member of Lab</h2>
       </div>

@@ -3,7 +3,7 @@
   <section id="achievement" class="dropshadow">
     <div class="h2">
       <div class="lag-shadow icon">
-        <img src="<?php bloginfo('template_directory'); ?>/images/top/i-about.png">
+        <img src="<?php bloginfo('template_directory'); ?>/images/icon/i-achievement.png">
       </div>
       <h2>Research achievement</h2>
     </div>

@@ -9,7 +9,7 @@
     <section id="about" class="dropshadow">
       <div class="h2">
         <div class="lag-shadow icon">
-          <img src="<?php bloginfo('template_directory'); ?>/images/top/i-about.png">
+          <img src="<?php bloginfo('template_directory'); ?>/images/icon/i-about.png">
         </div>
         <h2>About HANAWA Lab</h2>
       </div>
@@ -22,7 +22,7 @@
     <section id="whats">
       <div class="h2">
         <div class="lag-shadow icon">
-          <img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png">
+          <img src="<?php bloginfo('template_directory'); ?>/images/icon/i-whats.png">
         </div>
         <h2>What's New</h2>
       </div>

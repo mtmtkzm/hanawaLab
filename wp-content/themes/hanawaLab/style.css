@@ -779,6 +779,11 @@ h3.h3 {
   background-color: #ffffff;
   color: #252525;
   letter-spacing: .1em;
+  transition: padding-right .1s ease-in;
+}
+
+#gnav > li a:hover {
+  padding-right: 30px;
 }
 
 @media only screen and (max-width: 414px) {

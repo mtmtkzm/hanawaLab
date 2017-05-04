@@ -2,14 +2,14 @@
   <div class="mv mv-contact"></div>
   <section id="mail">
     <div class="h2">
-      <div class="lag-shadow icon"><img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png"></div>
+      <div class="lag-shadow icon"><img src="<?php bloginfo('template_directory'); ?>/images/icon/i-mail.png"></div>
       <h2>Get in touch</h2>
     </div>
     <a href="mailto:hanawa@sda.nagoya-cu.ac.jp">hanawa@sda.nagoya-cu.ac.jp</a>
   </section>
   <section id="access">
     <div class="h2">
-      <div class="lag-shadow icon"><img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png"></div>
+      <div class="lag-shadow icon"><img src="<?php bloginfo('template_directory'); ?>/images/icon/i-map.png"></div>
       <h2>Access to Univ.</h2>
     </div>
     <div class="access-univ">

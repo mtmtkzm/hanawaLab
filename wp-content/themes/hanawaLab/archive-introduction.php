@@ -3,7 +3,7 @@
 <section id="introduction">
   <div class="h2">
     <div class="lag-shadow icon">
-      <img src="<?php bloginfo('template_directory'); ?>/images/top/i-whats.png">
+      <img src="<?php bloginfo('template_directory'); ?>/images/icon/i-introduction.png">
     </div>
     <h2>Research Introduction</h2>
   </div>
