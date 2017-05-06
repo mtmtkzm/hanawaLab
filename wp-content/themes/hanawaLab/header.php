@@ -18,6 +18,9 @@
   </style>
 </head>
 <body <?php body_class(); ?> >
+  <div class="loading-wrapper js-loading">
+    <duv class="loading"></duv>
+  </div>
   <header id="header">
     <div class="logo-path sharetech">
       <a class="logo-path-root" href="/"></a>

@@ -1,0 +1,32 @@
+.loading-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: opacity .2s ease-in-out;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.loading {
+  width: 20px;
+  height: 20px;
+  background-color: $orange;
+  border-radius: 50%;
+  animation-duration: 750ms;
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes loading {
+  100% { background-color: $green; }
+}

@@ -6,6 +6,7 @@
       <h2>Get in touch</h2>
     </div>
     <a href="mailto:hanawa@sda.nagoya-cu.ac.jp">hanawa@sda.nagoya-cu.ac.jp</a>
+    <p class="mail-notice">お使いのメールクライアントが起動します。</p>
   </section>
   <section id="access">
     <div class="h2">
@@ -15,7 +16,7 @@
     <div class="access-univ">
       <div class="univ-map">
         <div id="map-canvas">GoogleMap[愛知県名古屋市千種区北千種2丁目1番10号]</div>
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy5z5voH7MTFBte_K_-TtuGkc_w9bUSa4"></script>
         <script>
           var map, marker;
           var center = {
@@ -41,7 +42,7 @@
               position: center,
               map: map,
               icon: new google.maps.MarkerImage(
-                '/wp-content/themes/hanawaLab/images/contact/pin.png',
+                '/wp-content/themes/hanawaLab-theme/images/contact/pin.png',
                 new google.maps.Size(46,66), // size
                 new google.maps.Point(0,0),  // origin
                 new google.maps.Point(23,33) // anchor

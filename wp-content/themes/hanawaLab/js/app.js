@@ -1,3 +1,12 @@
+
+
+/* Loading */
+var loading = document.querySelector('.js-loading');
+setTimeout(function(){
+  loading.classList.add('is-hidden');
+}, 1250);
+
+
 /* headerのパスを書き換える */
 
 var headerPath = document.querySelector('.js-directory');

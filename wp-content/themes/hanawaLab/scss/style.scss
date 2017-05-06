@@ -26,6 +26,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import 'module/dropshadow';
 @import 'module/hamburger';
 @import 'module/article';
+@import 'module/loading';
 
 #header {
   position: fixed;
@@ -228,16 +229,20 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   a {
     font-family: 'Share Tech', sans-serif;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: normal;
     @include media(sp) {
       font-size: 21px;
       font-weight: normal;
     }
   }
+
+  .mail-notice {
+    margin-top: 40px;
+  }
 }
 
 #access {
-  margin-top: 50px;
+  margin-top: 150px;
   padding: 0 15px;
   box-sizing: border-box;
   .access-univ {
@@ -311,7 +316,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   section {
     padding: 0;
     h3 {
-      color: $green;
+      color: rgb(131, 239, 123);
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 20px;
@@ -408,6 +413,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
           text-overflow: ellipsis;
           @include media(tb) {
             font-size: 18px;
+          }
+          @include media(sp) {
+            font-size: 15px;
           }
         }
         .post-content-body {
